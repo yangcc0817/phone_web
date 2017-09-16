@@ -1,0 +1,129 @@
+*{padding: 0;margin: 0}
+
+.logo{
+    width: 45%;
+    margin-left: -4%;
+    margin-top: -2%;
+}
+ul{
+    list-style: none;
+}
+.rt{
+    float: right;
+}
+.lf{
+    float: left;
+}
+.swiper-wrapper img{
+    width: 100%;
+}
+.slider-content{
+    margin-top: 50px;
+}
+.banner{
+    border: 1px solid #16A0E8;
+    border-radius: 3px;
+    margin: 5% 1%;
+}
+.click_check{
+    display: block;
+    width: 40%;
+    height: 4%;
+    border: 1px solid #E67E7E;
+    background: #E67E7E;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+.products-title{
+    text-align: center;
+    color:#16A0E8;
+}
+.products-title>.main-title{
+    padding-bottom: 1%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+    font-weight: bold;
+}
+.products-title>.main-title:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    border-bottom:1px solid #16A0E8;
+    -webkit-transform:scaleY(.5);
+    -webkit-transform-origin:0 0;
+}
+.product-block{
+    width: 28%;
+    margin-left: 4%;
+    color:#16A0E8;
+}
+.product-block img{
+    width: 100%;
+    border-radius: 3px;
+}
+.select_wrapper {
+    background:  url("../img/search.png") no-repeat top 15px right 12px;
+    line-height: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+}
+.select_wrapper:hover {
+    background:  url("../img/search.png") no-repeat top 15px right 12px;
+}
+.select_wrapper span {
+    display: block;
+    margin: 0 30px 0 15px;
+}
+.select_wrapper .select_inner {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: #687278;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    z-index: 3;
+}
+.select_wrapper .select_inner li {
+    border-bottom: 1px solid #eee;
+    padding: 0 15px;
+}
+.select_wrapper .select_inner li:hover {
+    background: #eee;
+}
+.select_wrapper .select_inner li:last-child {
+    border: none;
+    border-radius: 0 0 5px 5px;
+}
+.select_wrapper .select_inner li:first-child {
+    border-radius: 5px 5px 0 0;
+}
+.cal-form input{
+    display: block;
+    width: 97%;
+    margin: 2% auto;
+    border-radius: 3px;
+    height: 3%;
+    -webkit-appearance: none;
+}
+.cal-form select{
+    display: block;
+    width: 97%;
+    margin: 2% auto;
+    border-radius: 3px;
+    line-height: 2em;
+}
+.cal-form {
+    display: block;
+    border-radius: 3px;
+    color: #fff;
+}
+

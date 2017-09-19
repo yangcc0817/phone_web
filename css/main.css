@@ -7,6 +7,8 @@
 }
 ul{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .rt{
     float: right;
@@ -81,10 +83,10 @@ ul{
     margin: 0 30px 0 15px;
 }
 .select_wrapper .select_inner {
-    background: #fff;
+    background: #ffffff;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    color: #687278;
+    color: #000000;
     display: none;
     position: absolute;
     left: 0;
@@ -97,7 +99,7 @@ ul{
     padding: 0 15px;
 }
 .select_wrapper .select_inner li:hover {
-    background: #eee;
+    background: #ee493e;
 }
 .select_wrapper .select_inner li:last-child {
     border: none;
@@ -106,24 +108,134 @@ ul{
 .select_wrapper .select_inner li:first-child {
     border-radius: 5px 5px 0 0;
 }
+.form-box-show{
+    margin: 1%;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
 .cal-form input{
     display: block;
     width: 97%;
     margin: 2% auto;
     border-radius: 3px;
-    height: 3%;
-    -webkit-appearance: none;
+    height: 2em;
+    border:1px solid #dddddd;
+    padding-left: 2%;
+    background: #F2F2F2;
 }
 .cal-form select{
+    appearance:none;
     display: block;
     width: 97%;
-    margin: 2% auto;
+    margin: 1% auto;
     border-radius: 3px;
-    line-height: 2em;
+    height: 2em;
+    border: 1px solid #dddddd;
+    padding-left: 2%;
+    background: #F2F2F2;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-right: 14px;
 }
+.cal-form select::-ms-expand { display: none; }
 .cal-form {
     display: block;
     border-radius: 3px;
-    color: #fff;
 }
+.cal-form-title{
+    overflow: hidden;
+    margin-top:10px;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 8px;
+    text-align: center;
+}
+.form-text{
+    margin: 0 2%;
+    width: 50%;
+}
+.form-num{
+    border: 1px solid #dddddd;
+    display: inline-block;
+    height: 1.2em;
+    width: 7%;
+    margin: 0 2%;
+}
+.customer-slider{
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    width: 98%;
+    margin: 0 1%;
+}
+.txtMarquee-top{width:100%;height:30%;box-sizing: border-box; background: white;  overflow:hidden; position:relative;   }
+.txtMarquee-top .hd{ overflow:hidden;  height:30px; background:#f4f4f4; padding:0 10px;  }
+.txtMarquee-top .hd .prev,.txtMarquee-top .hd .next{ display:block;  width:9px; height:5px; float:right; margin-right:5px; margin-top:10px;  overflow:hidden;
+    cursor:pointer; }
+.txtMarquee-top .hd .next{ background-position:0 -140px;  }
+.txtMarquee-top .hd .prevStop{ background-position:-60px -100px;  }
+.txtMarquee-top .hd .nextStop{ background-position:-60px -140px;  }
+.txtMarquee-top .bd{ padding:15px;  }
+.txtMarquee-top .infoList li{ height:32px; line-height:32px;border-bottom: 1px solid #dddddd;   }
+.txtMarquee-top .infoList li .date{ float:right; color:#999;  }
+.cal-form2{
 
+}
+.choose-machine{
+    margin: 2% 0;
+
+}
+.choose-machine-content{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2%;
+}
+.machine-block{
+    text-align: center;
+    width: 16%;
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-left: 5%;
+}
+.phone-number>input{
+    display: block;
+    width: 91%;
+    margin: 2% auto;
+    border-radius: 3px;
+    height: 2em;
+    border: 1px solid #dddddd;
+    padding-left: 2%;
+    background: #F2F2F2;
+    margin-left: 5%;
+}
+.cal-form2-submit>input{
+    display: block;
+    width: 91%;
+    margin: 2% auto;
+    border-radius: 3px;
+    height: 2em;
+    border: 1px solid #dddddd;
+    padding-left: 2%;
+    background: #16A0E8;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.type-content-block{
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 1em;
+    width: 27%;
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+.choose-type{
+    margin: 2% 0;
+}
+.products-introduce{
+    margin: 2% 0;
+}

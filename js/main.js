@@ -26,4 +26,5 @@ $(document).ready(function (){
     $('.selectbox').parent().on('click', function (){
         $(this).find('ul').slideToggle('fast');
     });
+
 });

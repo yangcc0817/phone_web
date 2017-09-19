@@ -86,27 +86,123 @@
             </li>
         </ul>
     </div>
-    <!--calculate-block-->
+    <!--calculate-block1-->
     <div>
         <img src="../img/title.png" style="width: 100%" alt=""/>
     </div>
     <!-- calculate form-->
-    <div style="padding-top: 2%">
-        <div class="form-title">
-
+    <div class="form-box-show">
+        <div style="margin:10px 0;text-align: center;">
+            <span>————</span>
+            <span style="margin:0 2%">今日还剩<span class="form-num"></span>免费名额</span>
+            <span>————</span>
         </div>
         <form action="" class="cal-form">
-            <input type="number" placeholder="请输入房间面积"/>
-            <fieldset>
+            <div>
+                <input type="number" placeholder="请输入房间面积"/>
+            </div>
+            <div>
                 <select class="selectbox" id="11" name="">
                     <option value="1">一室一厅</option>
                     <option value="2">两室一厅</option>
                     <option value="3">三室一厅</option>
                 </select>
-            </fieldset>
-            <input type="number" placeholder="请输入手机号,报价结果将发送到你手机"/>
-            <input type="submit" value="立即计算"/>
+            </div>
+            <div>
+                <input type="number" placeholder="请输入手机号,报价结果将发送到你手机"/>
+            </div>
+            <div>
+                <input type="submit" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold"/>
+            </div>
         </form>
+    </div>
+    <!--滚动栏-->
+    <div class="customer-slider">
+        <div style="text-align: center;">
+            <h4>共有&nbsp;位客户获得了报价</h4>
+        </div>
+        <div class="txtMarquee-top">
+            <div class="bd">
+                <ul class="infoList">
+                    <li>137****5678 <span style="margin: 0 40px;">VAM公寓</span>6小时前</li>
+                    <li>137****5678 <span style="margin: 0 40px;">VAM公寓</span>6小时前</li>
+                    <li>137****5678 <span style="margin: 0 40px;">VAM公寓</span>6小时前</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--calculate-block2-->
+    <div>
+        <img src="../img/title.png" style="width: 100%" alt=""/>
+    </div>
+    <div class="form-box-show">
+        <div class="cal-form-title">
+            <span>————</span>
+            <span style="margin:0 2%">今日还剩<span class="form-num"></span>免费名额</span>
+            <span>————</span>
+        </div>
+        <form action="" class="cal-form2">
+            <div class="choose-machine">
+                <span style="margin-left:5%">选择机型</span>
+            </div>
+            <ul class="choose-machine-content">
+                <li class="machine-block">EX-P公寓</li>
+                <li class="machine-block">VAM公寓</li>
+                <li class="machine-block">VAM别墅</li>
+                <li class="machine-block">一拖一</li>
+            </ul>
+            <div class="choose-type">
+                <span style="margin-left:5%">选择类型</span>
+            </div>
+            <ul class="choose-type-content">
+                <li class="type-content-block">一拖一</li>
+                <li class="type-content-block">一拖二</li>
+                <li class="type-content-block">一拖三</li>
+                <li class="type-content-block">一拖四</li>
+                <li class="type-content-block">一拖无</li>
+                <li class="type-content-block">一拖六</li>
+                <li class="type-content-block">一拖七</li>
+                <li class="type-content-block">一拖八</li>
+                <li class="type-content-block">loft跃层</li>
+                <li class="type-content-block">别墅排屋</li>
+            </ul>
+            <div class="phone-number">
+                <input type="number" placeholder="请输入手机号，报价结果将发送到您手机"/>
+            </div>
+            <div class="cal-form2-submit">
+                <input type="submit" value="立即计算"/>
+            </div>
+        </form>
+    </div>
+    <!--滚动栏-->
+    <div class="customer-slider">
+        <div style="text-align: center;">
+            <h4>共有&nbsp;位客户获得了报价</h4>
+        </div>
+        <div class="txtMarquee-top">
+            <div class="bd">
+                <ul class="infoList">
+                    <li>137****5678 <span style="margin: 0 40px;">VAM公寓</span>6小时前</li>
+                    <li>137****5678 <span style="margin: 0 40px;">VAM公寓</span>6小时前</li>
+                    <li>137****5678 <span style="margin: 0 40px;">VAM公寓</span>6小时前</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--三大机型简介-->
+    <div class="products-introduce">
+        <div class="products-title">
+            <h4 class="main-title">日立家用中央空调三大热销机型</h4>
+            <p style="padding: 1% 0">分别是EX-Pro系列&nbsp;VAM公寓系列&nbsp;VAM别墅系列</p>
+        </div>
+        <ul class="main-introduce">
+            <li>
+
+            </li>
+            <li></li>
+            <li></li>
+        </ul>
+
     </div>
 
 
@@ -118,12 +214,14 @@
     <script src="../js/jquery-1.10.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             autoplay: 5000,
             //loop: true,
             pagination: '.swiper-pagination'
         });
-</script>
+        jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
+    </script>
 </body>
 </html>

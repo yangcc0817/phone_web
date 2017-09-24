@@ -163,6 +163,12 @@ ul{
     padding-bottom: 8px;
     text-align: center;
 }
+.contact-form-title{
+    overflow: hidden;
+    margin-top:10px;
+    padding-bottom: 8px;
+    text-align: center;
+}
 .form-text{
     margin: 0 2%;
     width: 50%;
@@ -208,6 +214,17 @@ ul{
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-left: 5%;
+}
+.contact-form-block{
+    color: white;
+    text-align: center;
+    width: 23%;
+    float: left;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 3px;
+    margin-left: 8%;
+    font-size: 0.8em;
 }
 .phone-number>input{
     display: block;
@@ -389,4 +406,95 @@ ul{
     border: 1px solid #16A0E8;
     border-radius: 3px;
     overflow: hidden;
+    margin: 0 1%;
+    padding: 1%;
 }
+.gift-content>li{
+    width: 47%;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+.gift-content-bk{
+    background: #16A0E8;
+    width: 35%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 4%;
+}
+.gift-content-text{
+    width: 60%;
+}
+.gift-content-text>p{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.gift-content-order{
+    letter-spacing:2px;
+    display: block;
+    margin: 2% auto;
+    width: 60%;
+    height: 2.2em;
+    font-size: 1.2em;
+    line-height: 2.2em;
+    text-align: center;
+    color: white;
+    background: #F79C33;
+    border-radius: 3px;
+
+}
+.shop-block{
+    float: left;
+    width: 17%;
+    margin-left: 13%;
+    position: relative;
+}
+.shop-img-background{
+    border: 1px solid #16A0E8;
+    border-radius: 50%;
+    margin-bottom: 10%;
+
+}
+.shop-block-name{
+    width: 35%;
+    margin-top:2%;
+    padding-left: 6%;
+    border-right: 1px solid #dddddd;
+
+    font-size: 1em;
+    font-weight: bold;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.install-block>li{
+    float: left;
+    width: 6em;
+    height: 6em;
+    line-height: 6em;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+

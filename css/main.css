@@ -1,5 +1,11 @@
 *{padding: 0;margin: 0}
-
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+}
 .logo{
     width: 45%;
     margin-left: -4%;
@@ -15,6 +21,18 @@ ul{
 }
 .lf{
     float: left;
+}
+.mt3{
+    margin-top: 3%;
+}
+.mb3{
+    margin-bottom: 3%;
+}
+.mb6{
+    margin-bottom: 6%;
+}
+.clear{
+    overflow: hidden;
 }
 .swiper-wrapper img{
     width: 100%;
@@ -69,18 +87,15 @@ ul{
     border-radius: 3px;
 }
 .select_wrapper {
-    background:  url("../img/search.png") no-repeat top 15px right 12px;
     line-height: 36px;
     border-radius: 3px;
     cursor: pointer;
     position: relative;
 }
-.select_wrapper:hover {
-    background:  url("../img/search.png") no-repeat top 15px right 12px;
-}
 .select_wrapper span {
     display: block;
-    margin: 0 30px 0 15px;
+    margin: 0 auto;
+    background: #F2F2F2;
 }
 .select_wrapper .select_inner {
     background: #ffffff;
@@ -99,7 +114,7 @@ ul{
     padding: 0 15px;
 }
 .select_wrapper .select_inner li:hover {
-    background: #ee493e;
+    background: #6dbcee;
 }
 .select_wrapper .select_inner li:last-child {
     border: none;
@@ -124,7 +139,6 @@ ul{
     background: #F2F2F2;
 }
 .cal-form select{
-    appearance:none;
     display: block;
     width: 97%;
     margin: 1% auto;
@@ -176,12 +190,9 @@ ul{
 .txtMarquee-top .bd{ padding:15px;  }
 .txtMarquee-top .infoList li{ height:32px; line-height:32px;border-bottom: 1px solid #dddddd;   }
 .txtMarquee-top .infoList li .date{ float:right; color:#999;  }
-.cal-form2{
 
-}
 .choose-machine{
     margin: 2% 0;
-
 }
 .choose-machine-content{
     width: 100%;
@@ -238,4 +249,144 @@ ul{
 }
 .products-introduce{
     margin: 2% 0;
+}
+.main-introduce li{
+    width: 100%;
+}
+.left-img{
+    margin-right: 2%;
+    width: 20%;
+    border: 1px solid #dddddd;
+    float: left;
+    border-radius: 50%;
+}
+.right-text{
+    width: 74%;
+    float: left;
+
+}
+.introduce-title{
+    width: 60%;
+    font-size: 1em;
+    font-weight: bold;
+    border-bottom: 1px solid #dddddd;
+}
+.img-background{
+    border: 1px solid #16A0E8;
+    border-radius: 3px;
+    background: #16A0E8;
+}
+.img-background img{
+    padding: 15%;
+}
+.feature-block{
+    float: left;
+    width: 14%;
+    margin-left: 9%;
+
+}
+.check_button{
+    display: block;
+    width: 34%;
+    background: #16A0E8;
+    border:1px solid #16A0E8;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+}
+.view-price-button{
+    display: block;
+    width: 72%;
+    height: 2.2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 2.2em;
+    background: #F79C33;
+    border-radius: 10px;
+    text-align: center;
+    color:white;
+    margin: 7% 0;
+    margin-left: 19%;
+}
+.cash-coupon{
+    margin:0 1%;
+    background: #F26D4F;
+    color:white;
+}
+.cash-coupon-title{
+    margin-top: 3%;
+    margin-left: 3%;
+    font-size: 1.2em;
+
+}
+.cash-coupon-little-button{
+    width: 20%;
+    margin-top: 2%;
+    text-align: center;
+    background: #F79C33;
+    padding: 1%;
+    color:white
+}
+.cash-coupon-money{
+    border: 1px solid white;
+    border-radius: 1px;
+    width: 93%;
+    margin: 0 auto;
+    position: relative;
+}
+.cash-coupon-num{
+    text-align: center;
+    width: 20%;
+    color: #37F72D;
+    position: absolute;
+    left: 40%;
+    top:84%;
+    background: #F26D4F;
+}
+.cash-coupon-center{
+    position: relative;
+    overflow: hidden;
+    height: 2.4em;
+}
+.left-round{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: -3%;
+    top: 24%;
+}
+.right-round{
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    right: -3%;
+    top: 24%;
+}
+.dotted-line{
+    border-bottom: 1px dotted white;
+    width: 100%;
+    position: absolute;
+    top:55%;
+}
+.cash-coupon-bottom-button{
+    letter-spacing:2px;
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    height: 2.2em;
+    font-size: 1.2em;
+    line-height: 2.2em;
+    text-align: center;
+    color: white;
+    background: #F79C33;
+    border-radius: 3px;
+}
+.gift-content{
+    border: 1px solid #16A0E8;
+    border-radius: 3px;
+    overflow: hidden;
 }

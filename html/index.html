@@ -37,30 +37,37 @@
         </div>
     </nav>
     <!-- slider content-->
-    <div class="swiper-container slider-content">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <a href="#"><img class="img-responsive" src="../img/1080_hitachi-11.jpg" alt=""/></a>
-            </div>
+    <div class="swiper-container" id="swiper1" style="margin-top: 51px;">
+        <div class="swiper-wrapper" >
             <div class="swiper-slide">
                 <a href="#"><img class="img-responsive" src="../img/1080_hitachi-22.jpg" alt=""/></a>
             </div>
             <div class="swiper-slide">
                 <a href="#"><img class="img-responsive" src="../img/1080_hitachi-33.jpg" alt=""/></a>
             </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="img-responsive" src="../img/1080_hitachi-11.jpg" alt=""/></a>
+            </div>
         </div>
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
+        <!--预约套餐按钮-->
+        <a class="book-button">预约该套餐</a>
     </div>
-    <!--预约套餐按钮-->
+
     <!--日立商用中央空调-->
     <div class="container banner">
-        <h4>日立商用中央空调</h4>
-        <p>写字楼&nbsp;酒店会所&nbsp;厂房&nbsp;房产配套</p>
-        <a class="click_check">
-            <span style="font-size: 1.3em">点击查看</span>
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        </a>
+        <div style="position: absolute;left: 4%;top:10%;z-index: 999;">
+            <h4 style="font-weight: bold">日立商用中央空调</h4>
+            <p style="color:#BBBBBB">写字楼&nbsp;酒店会所&nbsp;厂房&nbsp;房产配套</p>
+            <a class="click_check">
+                <span style="font-size: 1.2em;font-weight:600">点击查看</span>
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div style="position: absolute;left: 0;top:0;z-index: 99;border: 1px solid #16A0E8;border-radius: 3px">
+            <img style="width: 100%" class="img-responsive" src="../img/background.jpg" alt=""/>
+        </div>
     </div>
     <!--3 hot products-->
     <div class="hot-products">
@@ -92,10 +99,9 @@
     </div>
     <!-- calculate form-->
     <div class="form-box-show">
-        <div style="margin:10px 0;text-align: center;">
-            <span>————</span>
-            <span style="margin:0 2%">今日还剩<span class="form-num"></span>免费名额</span>
-            <span>————</span>
+        <div style="margin:10px 0;position: relative;min-height: 2em;">
+            <div class="header"><label>今日还剩</label><span></span><b style="font-weight: normal;"></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
+            <div style="width: 90%;border-bottom:1px solid #dddddd;position: absolute;left:5%;top:46%;z-index: 10;"></div>
         </div>
         <form action="" class="cal-form">
             <div>
@@ -119,7 +125,7 @@
     <!--滚动栏-->
     <div class="customer-slider">
         <div style="text-align: center;">
-            <h4>共有&nbsp;位客户获得了报价</h4>
+            <h4>共有&nbsp;156&nbsp;位客户获得了报价</h4>
         </div>
         <div class="txtMarquee-top">
             <div class="bd">
@@ -136,35 +142,104 @@
         <img src="../img/title.png" style="width: 100%" alt=""/>
     </div>
     <div class="form-box-show">
-        <div class="cal-form-title">
-            <span>————</span>
-            <span style="margin:0 2%">今日还剩<span class="form-num"></span>免费名额</span>
-            <span>————</span>
+        <div style="margin:10px 0;position: relative;min-height: 2em;">
+            <div class="header"><label>今日还剩</label><span></span><b style="font-weight: normal;"></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
+            <div style="width: 90%;border-bottom:1px solid #dddddd;position: absolute;left:5%;top:46%;z-index: 10;"></div>
         </div>
         <form action="" class="cal-form2">
             <div class="choose-machine">
-                <span style="margin-left:5%">选择机型</span>
+                <span>选择机型</span>
             </div>
             <ul class="choose-machine-content">
-                <li class="machine-block">EX-P公寓</li>
-                <li class="machine-block">VAM公寓</li>
-                <li class="machine-block">VAM别墅</li>
-                <li class="machine-block">一拖一</li>
+                <li class="machine-block remove-blue">
+                    <div>
+                        <input type="radio" id="myCheck-exp" style="display: none;" name="roomType" value="100">
+                        <label for="myCheck-exp" class="remove-blue">EX-P公寓</label>
+                    </div>
+                </li>
+                <li class="machine-block remove-blue">
+                    <div>
+                        <input type="radio" id="myCheck-vam" style="display: none;" name="roomType" value="200">
+                        <label for="myCheck-vam" class="remove-blue">VAM公寓</label>
+                    </div>
+                </li>
+                <li class="machine-block remove-blue">
+                    <div>
+                        <input type="radio" id="myCheck-vam2" style="display: none;" name="roomType" value="300">
+                        <label for="myCheck-vam2" class="remove-blue">VAM别墅</label>
+                    </div>
+                </li>
+                <li class="machine-block remove-blue">
+                    <div>
+                        <input type="radio" id="myCheck-feng" style="display: none;" name="roomType" value="400">
+                        <label for="myCheck-feng" class="remove-blue">一拖一</label>
+                    </div>
+                </li>
             </ul>
             <div class="choose-type">
-                <span style="margin-left:5%">选择类型</span>
+                <span>选择类型</span>
             </div>
-            <ul class="choose-type-content">
-                <li class="type-content-block">一拖一</li>
-                <li class="type-content-block">一拖二</li>
-                <li class="type-content-block">一拖三</li>
-                <li class="type-content-block">一拖四</li>
-                <li class="type-content-block">一拖无</li>
-                <li class="type-content-block">一拖六</li>
-                <li class="type-content-block">一拖七</li>
-                <li class="type-content-block">一拖八</li>
-                <li class="type-content-block">loft跃层</li>
-                <li class="type-content-block">别墅排屋</li>
+            <ul class="choose-type-content clear">
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type1" style="display: none;" name="machineType" value="400">
+                        <label for="type1" class="remove-blue">一拖一</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type2" style="display: none;" name="machineType" value="400">
+                        <label for="type2" class="remove-blue">一拖二</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type3" style="display: none;" name="machineType" value="400">
+                        <label for="type3" class="remove-blue">一拖三</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type4" style="display: none;" name="machineType" value="400">
+                        <label for="type4" class="remove-blue">一拖四</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type5" style="display: none;" name="machineType" value="400">
+                        <label for="type5" class="remove-blue">一拖五</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type6" style="display: none;" name="machineType" value="400">
+                        <label for="type6" class="remove-blue">一拖六</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type7" style="display: none;" name="machineType" value="400">
+                        <label for="type7" class="remove-blue">一拖七</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type8" style="display: none;" name="machineType" value="400">
+                        <label for="type8" class="remove-blue">一拖八</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type9" style="display: none;" name="machineType" value="400">
+                        <label for="type9" class="remove-blue">一拖九</label>
+                    </div>
+                </li>
+                <li class="type-content-block">
+                    <div>
+                        <input type="radio" id="type10" style="display: none;" name="machineType" value="400">
+                        <label for="type10" class="remove-blue">别墅排屋</label>
+                    </div>
+                </li>
             </ul>
             <div class="phone-number">
                 <input type="number" placeholder="请输入手机号，报价结果将发送到您手机"/>
@@ -344,7 +419,7 @@
         </ul>
     </div>
     <!--优缺点-->
-    <div class="container banner clear">
+    <div class="container clear" style="border: 1px solid #16A0E8;border-radius: 3px;margin: 0 1%;margin-top: 5%;margin-bottom: 3%">
         <div class="lf" style="width: 80%">
             <div style="font-size: 1em;font-weight: bold;color:#16A0E8;" class="mt3 mb3">一张图告诉你,日立中央空调的优缺点</div>
             <p style="font-size: 0.8em;color:#16A0E8;">第三者的角度,全面,客观分析日立中央空调优缺点</p>
@@ -359,7 +434,7 @@
 
     </div>
     <!--选择中央空调-->
-    <div class="container banner clear">
+    <div class="container clear" style="border: 1px solid #16A0E8;border-radius: 3px;margin: 0 1%;margin-bottom: 3%">
         <div class="lf" style="width: 80%;">
             <div style="font-size: 1em;font-weight: bold;color:#F79C33;" class="mt3 mb3">一张图告诉你,怎么选择日立中央空调</div>
             <p style="font-size: 0.8em;color:#F79C33;">第三者的角度,全面,客观分析日立中央空调优缺点</p>
@@ -375,7 +450,7 @@
     <!--超值套餐-->
     <div>
         <div class="products-title">
-            <h4 class="main-title">超值套餐&nbsp;省得不止一点点</h4>
+            <h4 class="main-title" style="width: 56%">超值套餐&nbsp;省得不止一点点</h4>
             <p style="padding: 1% 0">真心实惠, 外面比过价就知道了</p>
         </div>
         <ul>
@@ -436,7 +511,7 @@
     <!--下单送好礼-->
     <div class="mt3">
         <div class="products-title">
-            <h4 class="main-title">下单选未莱&nbsp;好礼不会停</h4>
+            <h4 class="main-title" style="width: 51%">下单选未莱&nbsp;好礼不会停</h4>
             <p style="padding: 1% 0">这些优惠, 其它公司不一定会有哦</p>
         </div>
         <ul class="gift-content clear">
@@ -500,7 +575,7 @@
     <!--阳光价-->
     <div class="mt3">
         <div class="products-title">
-            <h4 class="main-title">阳光价 • 全报价 • 一口价</h4>
+            <h4 class="main-title" style="width: 59%">阳光价 • 全报价 • 一口价</h4>
             <p style="padding: 2% 0;width: 86%;margin: 0 auto">未莱承诺: 我们的价格包含量房设计、配送、设备、辅料、施工、售后全部费用。没有其他任何隐形消费</p>
         </div>
         <ul class="clear">
@@ -529,7 +604,7 @@
     <!--为什么选择未莱-->
     <div class="mt3">
         <div class="products-title">
-            <h4 class="main-title">为什么选择未莱</h4>
+            <h4 class="main-title" style="width: 37%">为什么选择未莱</h4>
             <p style="padding: 2% 0;width: 86%;margin: 0 auto">4大保障&nbsp;选择更放心</p>
         </div>
         <ul>
@@ -579,7 +654,7 @@
     <div style="margin-top: 18%">
         <div style="position: relative">
             <div class="products-title" style="position: absolute;left: 36%;top:-20%">
-                <h4 class="main-title">我们的历史</h4>
+                <h4 class="main-title" style="width: 80%">我们的历史</h4>
                 <p style="padding: 2% 0;width: 100%;margin: 0 auto">6大保障&nbsp;选择更放心</p>
             </div>
             <div>
@@ -590,7 +665,7 @@
     <!--日立代理资质-->
     <div class="mt3">
         <div class="products-title">
-            <h4 class="main-title">日立一级代理资质</h4>
+            <h4 class="main-title" style="width: 40%">日立一级代理资质</h4>
             <p style="padding: 2% 0;width: 86%;margin: 0 auto">厂家授权专业经销商资质 + 安装资质</p>
         </div>
         <ul style="overflow: hidden">
@@ -617,7 +692,7 @@
     <!--未莱资质-->
     <div style="margin-top: 8%">
         <div class="products-title">
-            <h4 class="main-title">未莱的资质&荣誉</h4>
+            <h4 class="main-title" style="width: 38%">未莱的资质&荣誉</h4>
             <p style="padding: 2% 0;width: 86%;margin: 0 auto">数十年线下的耕耘,成就未莱的今天</p>
         </div>
         <div>
@@ -627,7 +702,7 @@
     <!--他们选择了未莱-->
     <div style="margin-top: 5%">
         <div class="products-title">
-            <h4 class="main-title">他们选择了未莱</h4>
+            <h4 class="main-title" style="width: 35%">他们选择了未莱</h4>
             <p style="padding: 2% 0;width: 86%;margin: 0 auto">我们除了家装零售,还有工装</p>
         </div>
         <div>
@@ -649,13 +724,13 @@
     <!--线下专业店-->
     <div style="margin-top: 5%">
         <div class="products-title">
-            <h4 class="main-title">未莱 ▬ 日立线下专业店</h4>
+            <h4 class="main-title" style="width: 51%">未莱 ▬ 日立线下专业店</h4>
             <p style="padding: 2% 0;width: 86%;margin: 0 auto">1700平3层综合体验展厅</p>
         </div>
         <div>
             <img style="width: 100%" class="img-responsive" src="../img/raw_1502443697.png" alt=""/>
         </div>
-        <ul class="clear mt3" style="padding-bottom: 5%;">
+        <ul class="clear mt3" style="padding-bottom: 5%;color:#828181">
             <li class="shop-block">
                 <div class="shop-img-background">
                     <img  style="padding: 17%" class="img-responsive" src="../img/raw_1505738132.png" alt=""/>
@@ -693,7 +768,7 @@
     <!--未莱安装工艺-->
     <div style="margin-top: 5%">
         <div class="products-title">
-            <h4 class="main-title">未莱安装&荣誉</h4>
+            <h4 class="main-title" style="width: 34%">未莱安装&荣誉</h4>
             <div>我们用心承诺做好每一个项目</div>
             <div>因为我们有优秀的团队和良好的施工管理以及工艺标准</div>
         </div>
@@ -707,7 +782,7 @@
     <!--优秀的团队-->
     <div style="margin-top: 3%">
         <h4 style="margin: 2% auto;width: 80%;color: #16A0E8;text-align: center;font-weight: bold">优秀的工艺来自优秀的团队</h4>
-        <div class="swiper-container swiper-container1">
+        <div class="swiper-container" id="swiper2">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="../img/person.jpg" alt=""/></div>
                 <div class="swiper-slide"><img src="../img/person.jpg" alt=""/></div>
@@ -724,7 +799,7 @@
     <!--我们的安装工艺-->
     <div style="margin-top: 5%">
         <div class="products-title">
-            <h4 class="main-title">我们的安装工艺</h4>
+            <h4 class="main-title" style="width: 34%">我们的安装工艺</h4>
             <div>因为我们有优秀的团队和良好的施工管理以及工艺标准</div>
         </div>
         <ul class="install-block clear mt3">
@@ -818,12 +893,12 @@
     <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="../js/main.js"></script>
     <script>
-        var mySwiper = new Swiper ('.swiper-container', {
-            autoplay: 5000,
+        var mySwiper = new Swiper ('#swiper1', {
+            //autoplay: 5000,
             //loop: true,
             pagination: '.swiper-pagination'
         });
-        var swiper = new Swiper('.swiper-container1', {
+        var swiper = new Swiper('#swiper2', {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             slidesPerView: 3,

@@ -41,14 +41,16 @@ ul{
     margin-top: 50px;
 }
 .banner{
-    border: 1px solid #16A0E8;
     border-radius: 3px;
     margin: 5% 1%;
+    position: relative;
+    min-height: 8.9em;
 }
 .click_check{
     display: block;
-    width: 40%;
-    height: 4%;
+    width: 57%;
+    height: 2.3em;
+    line-height: 2.3em;
     border: 1px solid #E67E7E;
     background: #E67E7E;
     border-radius: 10px;
@@ -62,10 +64,37 @@ ul{
 }
 .products-title>.main-title{
     padding-bottom: 1%;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     position: relative;
     font-weight: bold;
+}
+.header{
+    margin:0 auto;
+    width: 61%;
+    height: 1.7em;
+    line-height: 1.7em;
+    text-align: center;
+    background: white;
+    position: absolute;
+    left: 19%;
+    top:1%;
+    z-index: 100;
+}
+.header label{
+    font-weight: normal;
+    font-size: 1.1em;
+}
+.header span,.header b,.header i{
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.7em;
+    margin-left: 2%;
+    height: 1.7em;
+    border-radius: 3px;
+    background: #F26D4F;
+    font-weight: bold;
+    color:white;
 }
 .products-title>.main-title:after{
     content:"";
@@ -199,21 +228,32 @@ ul{
 
 .choose-machine{
     margin: 2% 0;
+    text-align: center;
 }
 .choose-machine-content{
     width: 100%;
     overflow: hidden;
     margin-bottom: 2%;
 }
+.machine-block input:checked +label {background: #16A0E8;color:white}
+.remove-blue{-moz-user-select: none; /*mozilar*/
+    -webkit-user-select: none; /*webkit*/
+    -ms-user-select: none; /*IE*/
+    user-select: none;}
 .machine-block{
+    font-size: 0.8em;
     text-align: center;
-    width: 16%;
+    width: 19%;
     float: left;
     height: 2em;
     line-height: 2em;
-    border: 1px solid #dddddd;
+    border: 1px solid #16A0E8;
     border-radius: 3px;
     margin-left: 5%;
+}
+.machine-block label{
+    font-weight: normal;
+    width: 100%;
 }
 .contact-form-block{
     color: white;
@@ -258,11 +298,19 @@ ul{
     float: left;
     height: 2em;
     line-height: 2em;
-    border: 1px solid #dddddd;
+    border: 1px solid #16A0E8;
     border-radius: 3px;
+}
+.type-content-block label{
+    font-weight: normal;
+    width: 100%;
+}
+.type-content-block input:checked + label{
+    background: #16A0E8;color:white
 }
 .choose-type{
     margin: 2% 0;
+    text-align: center;
 }
 .products-introduce{
     margin: 2% 0;
@@ -465,6 +513,21 @@ ul{
 
     font-size: 1em;
     font-weight: bold;
+}
+.book-button{
+    display: block;
+    width: 7em;
+    height:2em;
+    font-weight: bold;
+    line-height: 2em;
+    text-align:center;
+    background: white;
+    color:#16A0E8;
+    border-radius: 3px;
+    position: absolute;
+    left: 36%;
+    bottom: 13%;
+    z-index: 99999
 }
 .swiper-container {
     width: 100%;

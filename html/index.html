@@ -13,13 +13,13 @@
         <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ucKzemKTwi3ZOur93IAYKQW1KAuIXRA7"></script>
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ucKzemKTwi3ZOur93IAYKQW1KAuIXRA7"></script>
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
-    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />-->
 </head>
 <body>
     <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default" style="margin-bottom: 0">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -40,7 +40,7 @@
         </div>
     </nav>
     <!-- slider content-->
-    <div class="swiper-container" id="swiper1" style="margin-top: 51px;">
+    <div class="swiper-container" id="swiper1">
         <div class="swiper-wrapper" >
             <div class="swiper-slide">
                 <a href="#"><img class="img-responsive" src="../img/1080_hitachi-22.jpg" alt=""/></a>
@@ -59,16 +59,15 @@
     </div>
 
     <!--日立商用中央空调-->
-    <div class="container banner">
-        <div style="position: absolute;left: 4%;top:10%;z-index: 999;">
-            <h4 style="font-weight: bold">日立商用中央空调</h4>
-            <p style="color:#BBBBBB">写字楼&nbsp;酒店会所&nbsp;厂房&nbsp;房产配套</p>
+    <div class="banner">
+        <div style="position: absolute;left: 5.8%;top:9.2%;z-index: 999;width: 70%">
+            <div style="font-weight: bold;font-size: 2rem;">日立商用中央空调</div>
+            <p style="color:#BBBBBB;font-size: 1.33rem">写字楼、酒店会所、厂房、房产配套</p>
             <a class="click_check">
-                <span style="font-size: 1.2em;font-weight:600">点击查看</span>
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                点击查看<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             </a>
         </div>
-        <div style="position: absolute;left: 0;top:0;z-index: 99;border: 1px solid #16A0E8;border-radius: 3px">
+        <div style="position: absolute;left: 0;top:0;z-index: 99;border: 1px solid #16A0E8;border-radius: 3px;width: 100%">
             <img style="width: 100%" class="img-responsive" src="../img/background.jpg" alt=""/>
         </div>
     </div>
@@ -76,34 +75,34 @@
     <div class="hot-products">
         <div class="products-title">
             <h4 class="main-title">日立家用中央空调三大热销机型</h4>
-            <p style="padding: 1% 0">分别是EX-Pro系列&nbsp;VAM公寓系列&nbsp;VAM别墅系列</p>
+            <p style="padding: 1% 0;font-size: 1.33rem">分别是EX-Pro系列&nbsp;VAM公寓系列&nbsp;VAM别墅系列</p>
         </div>
         <ul>
             <li class="lf product-block">
                 <p><img src="../img/hitachi_280-1.jpg" alt=""/></p>
-                <p style="font-size: 1.1em;font-weight: bold">VAM公寓系列</p>
-                <p style="font-size: 0.5em">适合90-200方公寓</p>
+                <p style="font-size: 1.65rem;font-weight: bold;">VAM公寓系列</p>
+                <p style="font-size: 1.21rem">适合90-200方公寓</p>
             </li>
             <li class="lf product-block">
                 <p><img src="../img/hitachi_280-2.jpg" alt=""/></p>
-                <p style="font-size: 1.1em;font-weight: bold">EX-Pro系列</p>
-                <p style="font-size: 0.5em">适合60-140方公寓</p>
+                <p style="font-size: 1.65rem;font-weight: bold">EX-Pro系列</p>
+                <p style="font-size: 1.21rem">适合60-140方公寓</p>
             </li>
             <li class="lf product-block">
                 <p><img src="../img/hitachi_280-3.jpg" alt=""/></p>
-                <p style="font-size: 1.1em;font-weight: bold">VAM别墅系列</p>
-                <p style="font-size: 0.5em">适合200方以上别墅</p>
+                <p style="font-size: 1.65rem;font-weight: bold">VAM别墅系列</p>
+                <p style="font-size: 1.21rem">适合200方以上别墅</p>
             </li>
         </ul>
     </div>
     <!--calculate-block1-->
-    <div>
+    <div style="margin-top: 10px;">
         <img src="../img/title.png" style="width: 100%" alt=""/>
     </div>
     <!-- calculate form-->
     <div class="form-box-show">
         <div style="margin:10px 0;position: relative;min-height: 2em;">
-            <div class="header"><label>今日还剩</label><span></span><b style="font-weight: normal;"></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
+            <div class="header"><label>今日还剩</label><span></span><b></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
             <div style="width: 90%;border-bottom:1px solid #dddddd;position: absolute;left:5%;top:46%;z-index: 10;"></div>
         </div>
         <form action="" class="cal-form">
@@ -121,14 +120,14 @@
                 <input type="number" placeholder="请输入手机号,报价结果将发送到你手机"/>
             </div>
             <div>
-                <input type="submit" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold"/>
+                <input type="submit" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
             </div>
         </form>
     </div>
     <!--滚动栏-->
     <div class="customer-slider">
         <div style="text-align: center;">
-            <h4>共有&nbsp;156&nbsp;位客户获得了报价</h4>
+            <div style="font-size: 1.75rem;color:#009688;">共有&nbsp;<span style="color:#F27154;">156</span>&nbsp;位客户获得了报价</div>
         </div>
         <div class="txtMarquee-top">
             <div class="bd">
@@ -866,7 +865,7 @@
         </form>
     </div>
     <!--地图模块-->
-    <div id="allmap" style="min-height: 30em;"></div>
+    <!--<div id="allmap" style="min-height: 30em;"></div>-->
 
     <!--底部联系方式-->
     <div class="mt3 clear" style="background:  #16A0E8;color:white;">
@@ -900,7 +899,7 @@
         });
         jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
         // 百度地图API功能
-        var map = new BMap.Map('allmap');
+        /*var map = new BMap.Map('allmap');
         var poi = new BMap.Point(120.217,30.188);
         map.centerAndZoom(poi, 16);
         map.enableScrollWheelZoom();
@@ -928,9 +927,8 @@
         marker.addEventListener("click", function(e){
             searchInfoWindow.open(marker);
         });
-        map.addOverlay(marker); //在地图中添加marker
-       /* $("#BMapLib_transBox0>table>tr>td[width='30']").css("padding-left","4px");
-        $("#BMapLib_transBox0>table>tr>td[width='106']").css("padding-left","5px");*/
+        map.addOverlay(marker); //在地图中添加marker*/
+
     </script>
 </body>
 </html>

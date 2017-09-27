@@ -3,6 +3,9 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+body{
+    font-size: 12px;
+}
 a:hover{
     text-decoration: none;
 }
@@ -42,21 +45,19 @@ ul{
 }
 .banner{
     border-radius: 3px;
-    margin: 5% 1%;
+    margin: 5.1% 1%;
     position: relative;
-    min-height: 8.9em;
+    min-height: 9.9em;
 }
 .click_check{
     display: block;
-    width: 57%;
-    height: 2.3em;
-    line-height: 2.3em;
+    width: 53.2%;
+    font-size: 1.91rem;
     border: 1px solid #E67E7E;
     background: #E67E7E;
-    border-radius: 10px;
+    border-radius: 23px;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 2%;
 }
 .products-title{
     text-align: center;
@@ -64,16 +65,17 @@ ul{
 }
 .products-title>.main-title{
     padding-bottom: 1%;
-    width: 70%;
+    width: 76%;
     margin: 0 auto;
     position: relative;
     font-weight: bold;
+    font-size: 2rem;
 }
 .header{
     margin:0 auto;
-    width: 61%;
-    height: 1.7em;
-    line-height: 1.7em;
+    width: 62%;
+    height: 1.8em;
+    line-height: 1.8em;
     text-align: center;
     background: white;
     position: absolute;
@@ -83,17 +85,19 @@ ul{
 }
 .header label{
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: 1.75rem;
+    color:#009688;
 }
 .header span,.header b,.header i{
     display: inline-block;
-    vertical-align: middle;
-    width: 1.7em;
+    vertical-align: top;
+    width: 1.8em;
     margin-left: 2%;
-    height: 1.7em;
+    height: 1.8em;
     border-radius: 3px;
     background: #F26D4F;
     font-weight: bold;
+    font-size: 1.251rem;
     color:white;
 }
 .products-title>.main-title:after{
@@ -129,8 +133,8 @@ ul{
 .select_wrapper .select_inner {
     background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #bbbbbb;
     display: none;
     position: absolute;
     left: 0;
@@ -160,9 +164,10 @@ ul{
 .cal-form input{
     display: block;
     width: 97%;
+    font-size: 1.5rem;
     margin: 2% auto;
     border-radius: 3px;
-    height: 2em;
+    height: 3em;
     border:1px solid #dddddd;
     padding-left: 2%;
     background: #F2F2F2;
@@ -172,7 +177,8 @@ ul{
     width: 97%;
     margin: 1% auto;
     border-radius: 3px;
-    height: 2em;
+    height: 3em;
+    font-size: 1.5rem;
     border: 1px solid #dddddd;
     padding-left: 2%;
     background: #F2F2F2;
@@ -288,7 +294,9 @@ ul{
     background: #16A0E8;
     color: #ffffff;
     font-weight: bold;
+    font-size: 2rem;
     margin-left: 5%;
+    letter-spacing: 5px;
 }
 .type-content-block{
     text-align: center;
@@ -516,16 +524,17 @@ ul{
 }
 .book-button{
     display: block;
-    width: 7em;
-    height:2em;
+    width: 37%;
+    height:9.1%;
     font-weight: bold;
-    line-height: 2em;
     text-align:center;
     background: white;
     color:#16A0E8;
     border-radius: 3px;
     position: absolute;
-    left: 36%;
+    left: 32%;
+    font-size: 2rem;
+    padding-top: 1%;
     bottom: 13%;
     z-index: 99999
 }

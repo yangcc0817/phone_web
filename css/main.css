@@ -258,7 +258,8 @@ ul{
 .choose-machine-content{
     width: 100%;
     overflow: hidden;
-    margin-bottom: 2%;
+    font-size: 1.33rem;
+    margin-bottom:5%;
 }
 .machine-block input:checked +label {background: #16A0E8;color:white}
 .remove-blue{-moz-user-select: none; /*mozilar*/
@@ -283,23 +284,25 @@ ul{
 .contact-form-block{
     color: white;
     text-align: center;
-    width: 23%;
+    width: 25%;
     float: left;
     height: 2em;
+    padding: 0 1%;
     line-height: 2em;
     border-radius: 3px;
-    margin-left: 8%;
-    font-size: 0.8em;
+    margin-left: 6%;
+    font-size: 1.33rem;
 }
-.phone-number>input{
+.phone-number>input,.customer-name>input{
     display: block;
     width: 95%;
-    margin: 0 auto;
+    margin: 2% auto;
     border-radius: 3px;
     height: 3em;
     border: 1px solid #dddddd;
     padding-left: 2%;
     background: #F2F2F2;
+    font-size: 1.33rem;
 }
 .grey-banner{
     background: #EDE8ED;
@@ -574,12 +577,11 @@ ul{
 
 }
 .shop-block-name{
-    width: 35%;
-    margin-top:2%;
-    padding-left: 6%;
+    width: 33%;
+    margin-top: 2%;
+    padding-left: 2%;
     border-right: 1px solid #dddddd;
-
-    font-size: 1em;
+    font-size: 1.55rem;
     font-weight: bold;
 }
 .book-button{
@@ -621,12 +623,20 @@ ul{
     -webkit-align-items: center;
     align-items: center;
 }
-.install-block>li{
+.install-block tr td{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    color:#16A0E8;
+    font-size: 1.25rem;
+}
+.shop-block-text{
+    width: 33%;
+    text-align: center;
+    font-size: 1.33rem;
     float: left;
-    width: 6em;
-    height: 6em;
-    line-height: 6em;
-    margin-left: 2%;
+}
+.customer-name{
     margin-bottom: 2%;
 }
 

@@ -55,7 +55,37 @@
         <!-- 如果需要分页器 -->
         <div class="swiper-pagination"></div>
         <!--预约套餐按钮-->
-        <a class="book-button">预约该套餐</a>
+        <a class="book-button" data-target="#myModal" data-toggle="modal">预约该套餐</a>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative">
+                <div style="position: relative;">
+                    <span class="modal-close msg-close"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="clear">
+                        <h4 style="width: 70%;margin: 2% auto;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">专业的舒适家居供应商</h4>
+                        <div style="margin:1% 0;position: relative;min-height: 2em;">
+                            <div class="header" style="font-size: 1.33rem;width: 46%;left: 27%">今日已有<label style="font-size: 1.33rem;">126</label>人报名</div>
+                            <div style="width: 98%;border-bottom:1px solid #dddddd;position: absolute;top:46%;z-index: 10;"></div>
+                        </div>
+                        <form action="" class="cal-form2">
+                            <div class="customer-name">
+                                <input type="text" style="width: 92%" placeholder="请输入您的姓名" name="customerName"/>
+                            </div>
+                            <div class="phone-number">
+                                <input type="number" style="width: 92%" placeholder="请输入您的手机" name="customerPhone"/>
+                            </div>
+                            <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
+                            <div class="cal-form2-submit">
+                                <input id="bookPrice" type="button" value="确认提交" style="background: #F79C33"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--日立商用中央空调-->
@@ -121,10 +151,37 @@
                 <input type="number" placeholder="请输入手机号,报价结果将发送到你手机"/>
             </div>
             <div>
-                <input type="submit" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
+                <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
             </div>
         </form>
     </div>
+    <!--计算单价弹出框-->
+    <div class="modal fade" id="PriceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative">
+                <div style="position: relative;">
+                    <span class="modal-close msg-close PriceModal-close"></span>
+                </div>
+                <div class="modal-body" style="position: relative">
+                    <!--<div class="sanjiao"></div>-->
+                    <div style="background: #F5F0F5;">
+                        <h4 style="width: 70%;margin: 1% auto;padding-top: 4%;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">您选择的预估价为</h4>
+                        <p style="width: 50%;margin: 0 auto;text-align: center"><b style="font-size: 2rem;color:#828181">3.8</b><span style="font-size: 1.55rem;">万元左右</span></p>
+                    </div>
+                    <div style="padding-top: 33px;border: 1px solid #dddddd;border-top: 1px solid transparent">
+                        <div style="width: 50%;margin: 0 auto;color:#828181;border: 1px solid #dddddd;border-radius: 5px;text-align: center;padding: 1%;">
+                            <p><b style="font-size: 1.75rem;">设备费：</b><span style="font-size: 1.55rem;">3.2万元</span></p>
+                            <div><b style="font-size: 1.75rem;">安装费：</b><span style="font-size: 1.55rem;">0.6万元</span></div>
+                        </div>
+                        <div style="font-size: 1.55rem;color:#16A0E8;margin: 2% auto;text-align: center" >我们的报价包含设计费、打孔费、运输费、风口加长费、发票税费、管理费......</div>
+                        <div style="font-size: 1.55rem;color:#16A0E8;text-align: center" >不含隐藏费用，一口价！！！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--滚动栏-->
     <div class="customer-slider">
         <div style="text-align: center;">
@@ -244,7 +301,7 @@
                 <input type="number" placeholder="*请输入手机号，报价结果将发送到您手机" style="font-size: 1.5rem;"/>
             </div>
             <div class="cal-form2-submit">
-                <input type="submit" value="立即计算"/>
+                <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即计算"/>
             </div>
         </form>
     </div>
@@ -472,7 +529,7 @@
                     <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#aaaaaa">
                         <div style="border-bottom: 1px solid #dddddd;font-size: 1.5rem;">市场价￥<span style="font-size: 2.1rem;font-weight: bold;color:#F79C33; ">36000</span>元</div>
                         <div style="font-size: 1.1rem;margin-top: 1%">*我们坚持给你最便宜</div>
-                        <a href="#" class="view-price-button">查看未莱售价</a>
+                        <a class="view-price-button" data-target="#myModal" data-toggle="modal">查看未莱售价</a>
                         <div style="font-size: 1.1rem;margin-left: 17%">*今日已有36人报价</div>
                     </div>
                 </div>
@@ -487,7 +544,7 @@
                     <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#aaaaaa">
                         <div style="border-bottom: 1px solid #dddddd">市场价￥<span style="font-size: 1.7em;font-weight: bold;color:#16A0E8; ">36000</span>元</div>
                         <div style="font-size: 1.1rem;margin-top: 1%">*我们坚持给你最便宜</div>
-                        <a href="#" class="view-price-button" style="background:#16A0E8;">查看未莱售价</a>
+                        <a class="view-price-button" style="background:#16A0E8;" data-target="#myModal" data-toggle="modal">查看未莱售价</a>
                         <div style="font-size: 1.1rem;margin-left: 17%">*今日已有36人报价</div>
                     </div>
                 </div>
@@ -513,7 +570,7 @@
             <div class="right-round"></div>
         </div>
         <div class="cash-coupon-bottom">
-            <a href="#" class="cash-coupon-bottom-button">立即领取</a>
+            <a data-target="#myModal" data-toggle="modal" class="cash-coupon-bottom-button">立即领取</a>
             <div style="font-size: 1.23rem;text-align: center;margin: 2% 0;">*注:一个用户只能使用一次，每次仅能使用一张,单价满3万可用</div>
         </div>
     </div>
@@ -581,7 +638,7 @@
                 </div>
             </li>
         </ul>
-        <a href="#" class="gift-content-order">立即下单</a>
+        <a data-target="#myModal" data-toggle="modal" class="gift-content-order">立即下单</a>
     </div>
     <div class="grey-banner"></div>
     <!--阳光价-->
@@ -915,7 +972,7 @@
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <ul class="nav-bottom">
             <li style="background:#16A0E8 "><a href="#">在线咨询</a></li>
-            <li style="background:#F79C33 "><a href="#">拨打电话</a></li>
+            <li style="background:#F79C33 "><a href="tel:057186691616">拨打电话</a></li>
             <li style="background:#F26D4F "><a href="#">预约购买</a></li>
         </ul>
     </nav>

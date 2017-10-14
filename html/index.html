@@ -17,7 +17,7 @@
     <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
     <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />-->
 </head>
-<body>
+<body style="padding-bottom: 50px;">
     <!-- Static navbar -->
     <nav class="navbar navbar-default" style="margin-bottom: 0">
         <div class="container">
@@ -40,6 +40,7 @@
         </div>
     </nav>
     <!-- slider content-->
+    <a href="" id="top"></a>
     <div class="swiper-container" id="swiper1">
         <div class="swiper-wrapper" >
             <div class="swiper-slide">
@@ -70,6 +71,11 @@
                             <div class="header" style="font-size: 1.33rem;width: 46%;left: 27%">今日已有<label style="font-size: 1.33rem;">126</label>人报名</div>
                             <div style="width: 98%;border-bottom:1px solid #dddddd;position: absolute;top:46%;z-index: 10;"></div>
                         </div>
+                        <div class="alert alert-danger hidden" role="alert" style="padding-bottom:7%;padding-top:3%;width: 92%;margin: 0 auto;height: 2em;">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            <span class="alert-content"></span>
+                        </div>
                         <form action="" class="cal-form2">
                             <div class="customer-name">
                                 <input type="text" style="width: 92%" placeholder="请输入您的姓名" name="customerName"/>
@@ -98,7 +104,7 @@
             </a>
         </div>
         <div style="position: absolute;left: 0;top:0;z-index: 99;border: 1px solid #16A0E8;border-radius: 3px;width: 100%">
-            <img style="width: 100%" class="img-responsive" src="../img/background.jpg" alt=""/>
+            <img style="width: 100%;border-radius: 3px;" class="img-responsive" src="../img/background.jpg" alt=""/>
         </div>
     </div>
     <!--3 hot products-->
@@ -180,6 +186,18 @@
             </div>
         </div>
     </div>
+    <!--知道了弹出框-->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div style="font-size: 2rem;font-weight:bold;width: 80%;margin: 5% auto;color:#16A0E8;text-align: center;">系统已收到您的提交！！！</div>
+                    <div style="width: 87%;margin: 0 auto;color:#A66D82;font-size: 1.5rem;margin-bottom: 5%;text-indent: 15px;"> 2个小时内我们的暖通顾问将给您回电，免费提供专业的方案配置咨询服务。</div>
+                    <div><a class="successModal-close">我知道了</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!--滚动栏-->
@@ -212,7 +230,7 @@
             <div class="choose-machine">
                 <span>选择机型</span>
             </div>
-            <ul class="choose-machine-content">
+            <ul class="choose-machine-content" style="color:#6E6E6E">
                 <li class="machine-block remove-blue">
                     <div>
                         <input type="radio" id="myCheck-exp" style="display: none;" name="roomType" value="100">
@@ -241,7 +259,7 @@
             <div class="choose-type">
                 <span>选择类型</span>
             </div>
-            <ul class="choose-type-content clear">
+            <ul class="choose-type-content clear" style="color:#6E6E6E">
                 <li class="type-content-block">
                     <div>
                         <input type="radio" id="type2" style="display: none;" name="machineType" value="400">
@@ -487,7 +505,7 @@
         <div class="lf">
             <div style="font-size: 1.45rem;font-weight: bold;color:#16A0E8;" class="mt3 mb3">一张图告诉你，日立中央空调的优缺点</div>
             <p style="font-size: 1.23rem;color:#16A0E8;">第三者的角度，全面，客观分析日立中央空调优缺点</p>
-            <a class="check_button mb3">
+            <a class="check_button mb3" href="hitachi_2.html">
                 <span style="font-size: 1.45rem;font-weight: bold">点击查看</span>
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             </a>
@@ -638,7 +656,7 @@
                 </div>
             </li>
         </ul>
-        <a data-target="#myModal" data-toggle="modal" class="gift-content-order">立即下单</a>
+        <a data-target="#myModal" data-toggle="modal" class="gift-content-order">预约购买</a>
     </div>
     <div class="grey-banner"></div>
     <!--阳光价-->
@@ -950,11 +968,14 @@
             </div>
             <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
             <div class="cal-form2-submit">
-                <input type="submit" value="立即报名" style="background: #F79C33"/>
+                <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即报名" style="background: #F79C33"/>
             </div>
         </form>
     </div>
     <!--地图模块-->
+    <div style="width: 100%;margin: 2% auto">
+        <img src="../img/map.jpg" class="img-responsive" alt=""/>
+    </div>
     <!--<div id="allmap" style="min-height: 30em;"></div>-->
 
     <!--底部联系方式-->
@@ -968,6 +989,14 @@
             <div style="text-align: right;padding-right: 2%;font-size: 1.33rem;">copyright@浙江百诚未莱环境集成有限公司</div>
         </div>
     </div>
+    <!--返回顶部-->
+    <div style="background: #EDE8ED;" class="clear" >
+        <div class="return-top">
+            <a href="#top" style="color:#ffffff;font-size: 1.9rem;">返回顶部</a>
+            <span class="glyphicon glyphicon-triangle-bottom" style="color: #F79C33;position: absolute;left: 41%;top: 91%;"></span>
+        </div>
+
+    </div>
     <!--底部导航栏-->
     <nav class="navbar navbar-default navbar-fixed-bottom">
         <ul class="nav-bottom">
@@ -976,6 +1005,9 @@
             <li style="background:#F26D4F "><a href="#">预约购买</a></li>
         </ul>
     </nav>
+
+
+
 
     <!--<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>-->
     <script src="../js/jquery-1.10.1.min.js"></script>
@@ -996,6 +1028,8 @@
             spaceBetween: 10
         });
         jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
+
+
         // 百度地图API功能
         /*var map = new BMap.Map('allmap');
         var poi = new BMap.Point(120.217,30.188);

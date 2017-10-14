@@ -12,27 +12,54 @@ $(document).ready(function (){
         $(".header i").html(third);
     }
     setNum(numString);
+    //关闭弹窗
     $(".msg-close").click(function(){
         $("#myModal").modal('hide');
     });
     $(".PriceModal-close").click(function(){
         $("#PriceModal").modal('hide');
     });
+    $('.successModal-close').click(function(){
+        $("#successModal").modal('hide');
+    });
+    //清空弹出框的初始化值
+    $('#myModal').on('hidden.bs.modal', function () {
+        $(".customer-name input[name='customerName']").val('');
+        $(".phone-number input[name='customerPhone']").val('');
+    });
+
+    //校验框绑定blur事件
+
+
+    $(".customer-name input[name='customerName']").blur(function(){
+        if(this.value){
+            $(".alert-danger").addClass("hidden");
+        }
+    });
+    $(".phone-number input[name='customerPhone']").keyup(function(){
+        if(this.value && (/^1[34578]\d{9}$/).test(this.value)){
+            $(".alert-danger").addClass("hidden");
+        }
+    });
+
     //预约套餐报价
     $("#bookPrice").click(function(){
-        var reg = /^1[34578]\d{9}$/;
         var cusName = $(".customer-name input[name='customerName']").val();
         var phone = $(".phone-number input[name='customerPhone']").val();
+        var reg = /^1[34578]\d{9}$/;
+        var result = reg.test(phone);
         if(!cusName) {
-            alert("请先输入姓名！");
+            $(".alert-danger").removeClass("hidden");
+            $(".alert-content").html("请输入姓名！");
             return;
         }else if(!phone){
-            alert("请输入手机号码！");
+            $(".alert-danger").removeClass("hidden");
+            $(".alert-content").html("请输入手机号！");
             return;
         }
-        var result = reg.test(phone);
         if(phone && !result){
-            alert("请输入正确的手机号码！");
+            $(".alert-danger").removeClass("hidden");
+            $(".alert-content").html("请输入正确的手机号！");
             return;
         }
         if (phone && result && cusName) {
@@ -46,10 +73,7 @@ $(document).ready(function (){
                 },
                 success: function(data) {
                     $("#myModal").modal('hide');
-                    $(".customer-name input[name='customerName']").val("");
-                    $(".phone-number input[name='customerPhone']").val("");
-                    //弹出框
-                   //alert("报价成功，稍后联系您！");
+                    $("#successModal").modal('show');
                 }
             });
         }

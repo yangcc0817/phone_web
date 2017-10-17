@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="../css/main.css"/>
 </head>
 <body style="background: #EDE8ED;padding-bottom: 50px;">
-    <nav class="navbar navbar-default" style="margin-bottom: 2%">
+    <nav class="navbar navbar-default clear" style="margin-bottom: 2%">
         <a href="index.html" style="display: inline-block;width: 10%;">
             <span class="glyphicon glyphicon-chevron-left return-button"></span>
         </a>
+        <div style="width: 10%;float: right;margin-right: 2%;">
+            <a href=""><img src="../img/raw_1507543709.png" class="img-responsive" style="padding: 5%" alt=""/></a>
+        </div>
     </nav>
     <!--标题部分-->
     <a href="" id="top"></a>
@@ -94,7 +97,7 @@
     </div>
     <!--优点1-->
     <div style="background: #4EC3F5;margin-top: 2%;padding-bottom: 2%">
-        <div>
+        <div style="padding: 2% 0">
             <table>
                 <tr>
                     <td style="width: 6%"><span class="title-line"></span></td>
@@ -151,7 +154,7 @@
     </div>
     <!--优点2-->
     <div style="background: #4EC3F5;margin-top: 2%;padding-bottom: 2%">
-        <div>
+        <div style="padding: 2% 0">
             <table>
                 <tr>
                     <td style="width: 6%"><span class="title-line"></span></td>
@@ -189,7 +192,7 @@
     </div>
     <!--优点3-->
     <div style="background: #4EC3F5;margin-top: 2%;padding-bottom: 2%">
-        <div>
+        <div style="padding: 2% 0">
             <table>
                 <tr>
                     <td style="width: 6%"><span class="title-line"></span></td>
@@ -211,7 +214,7 @@
     </div>
     <!--优点4-->
     <div style="background: #4EC3F5;margin-top: 2%;padding-bottom: 4%">
-        <div>
+        <div style="padding: 2% 0">
             <table>
                 <tr>
                     <td style="width: 6%"><span class="title-line"></span></td>
@@ -247,7 +250,7 @@
     </div>
     <!--优点5-->
     <div style="background: #4EC3F5;margin-top: 2%;padding-bottom: 5%;">
-        <div>
+        <div style="padding: 2% 0">
             <table>
                 <tr>
                     <td style="width: 6%"><span class="title-line"></span></td>
@@ -290,7 +293,7 @@
     </div>
     <!--缺点-->
     <div style="background: #4EC3F5;margin-top: 2%;padding-bottom: 5%;">
-        <div>
+        <div style="padding: 2% 0">
             <table>
                 <tr>
                     <td style="width: 6%"><span class="title-line"></span></td>
@@ -439,7 +442,7 @@
             <div style="position: absolute;left: 5.8%;top:9.2%;z-index: 999;width: 70%">
                 <div style="font-weight: bold;font-size: 2rem;">日立商用中央空调</div>
                 <p style="color:#BBBBBB;font-size: 1.33rem">写字楼、酒店会所、厂房、房产配套</p>
-                <a class="click_check">
+                <a class="click_check" href="hitachi_1.html">
                     点击查看<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                 </a>
             </div>
@@ -572,6 +575,33 @@
             </div>
         </div>
     </div>
+
+    <!--计算单价弹出框-->
+    <div class="modal fade" id="PriceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative">
+                <div style="position: relative;">
+                    <span class="modal-close msg-close PriceModal-close"></span>
+                </div>
+                <div class="modal-body" style="position: relative">
+                    <!--<div class="sanjiao"></div>-->
+                    <div style="background: #F5F0F5;">
+                        <h4 style="width: 70%;margin: 1% auto;padding-top: 4%;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">您选择的预估价为</h4>
+                        <p style="width: 50%;margin: 0 auto;text-align: center"><b style="font-size: 2rem;color:#828181">3.8</b><span style="font-size: 1.55rem;">万元左右</span></p>
+                    </div>
+                    <div style="padding-top: 33px;border: 1px solid #dddddd;border-top: 1px solid transparent">
+                        <div style="width: 50%;margin: 0 auto;color:#828181;border: 1px solid #dddddd;border-radius: 5px;text-align: center;padding: 1%;">
+                            <p><b style="font-size: 1.75rem;">设备费：</b><span style="font-size: 1.55rem;">3.2万元</span></p>
+                            <div><b style="font-size: 1.75rem;">安装费：</b><span style="font-size: 1.55rem;">0.6万元</span></div>
+                        </div>
+                        <div style="font-size: 1.55rem;color:#16A0E8;margin: 2% auto;text-align: center" >我们的报价包含设计费、打孔费、运输费、风口加长费、发票税费、管理费......</div>
+                        <div style="font-size: 1.55rem;color:#16A0E8;text-align: center" >不含隐藏费用，一口价！！！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--返回顶部-->
     <div style="background: #EDE8ED;" class="clear" >
         <div class="return-top">
@@ -593,6 +623,7 @@
     <script src="../js/jquery-1.10.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../js/main.js"></script>
     <script>
         jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
 

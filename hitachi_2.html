@@ -615,9 +615,57 @@
         <ul class="nav-bottom">
             <li style="background:#16A0E8 "><a href="#">在线咨询</a></li>
             <li style="background:#F79C33 "><a href="tel:057186691616">拨打电话</a></li>
-            <li style="background:#F26D4F "><a href="#">预约购买</a></li>
+            <li style="background:#F26D4F "><a data-target="#myModal" data-toggle="modal">预约购买</a></li>
         </ul>
     </nav>
+    <!--知道了弹出框-->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div style="font-size: 2rem;font-weight:bold;width: 80%;margin: 5% auto;color:#16A0E8;text-align: center;">系统已收到您的提交！！！</div>
+                    <div style="width: 87%;margin: 0 auto;color:#A66D82;font-size: 1.5rem;margin-bottom: 5%;text-indent: 15px;"> 2个小时内我们的暖通顾问将给您回电，免费提供专业的方案配置咨询服务。</div>
+                    <div><a class="successModal-close">我知道了</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--输入弹框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative">
+                <div style="position: relative;">
+                    <span class="modal-close msg-close"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="clear">
+                        <h4 style="width: 70%;margin: 2% auto;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">专业的舒适家居供应商</h4>
+                        <div style="margin:1% 0;position: relative;min-height: 2em;">
+                            <div class="header" style="font-size: 1.33rem;width: 46%;left: 27%">今日已有<label style="font-size: 1.33rem;">126</label>人报名</div>
+                            <div style="width: 98%;border-bottom:1px solid #dddddd;position: absolute;top:46%;z-index: 10;"></div>
+                        </div>
+                        <div class="alert alert-danger hidden" role="alert" style="padding-bottom:7%;padding-top:3%;width: 92%;margin: 0 auto;height: 2em;">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            <span class="alert-content"></span>
+                        </div>
+                        <form action="" class="cal-form2">
+                            <div class="customer-name">
+                                <input type="text" style="width: 92%" placeholder="请输入您的姓名" name="customerName"/>
+                            </div>
+                            <div class="phone-number">
+                                <input type="number" style="width: 92%" placeholder="请输入您的手机" name="customerPhone"/>
+                            </div>
+                            <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
+                            <div class="cal-form2-submit">
+                                <input id="bookPrice" type="button" value="确认提交" style="background: #F79C33"/>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="js/jquery-1.10.1.min.js"></script>

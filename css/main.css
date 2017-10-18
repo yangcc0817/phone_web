@@ -659,12 +659,12 @@ ul{
 
 .modal-close {
     border-radius: 50%;
-    line-height: 18px;
+    line-height: 31px;
     background: #E8D8E8;
     text-align: center;
-    height: 20px;
-    width: 20px;
-    font-size: 1.5rem;
+    height: 31px;
+    width: 31px;
+    font-size: 1.8rem;
     padding: 1px;
     top: -8px;
     right: -8px;
@@ -689,7 +689,10 @@ ul{
 }
 .return-top{
     float: right;
-    position: relative;
+    position: fixed;
+    right: 5%;
+    z-index: 999999;
+    bottom: 10%;
     margin: 1% auto;
     margin-right: 2%;
     width:60px;

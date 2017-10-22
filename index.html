@@ -77,7 +77,10 @@
                             <span class="sr-only">Error:</span>
                             <span class="alert-content"></span>
                         </div>
-                        <form action="" class="cal-form2">
+                        <form action="" class="cal-form2" id="cal-form2">
+                            <input type="hidden" value="post" name="action">
+                            <input type="hidden" value="14" name="diyid">
+                            <input type="hidden" value="2" name="do">
                             <div class="customer-name">
                                 <input type="text" style="width: 92%" placeholder="请输入您的姓名" name="customerName"/>
                             </div>
@@ -85,9 +88,11 @@
                                 <input type="number" style="width: 92%" placeholder="请输入您的手机" name="customerPhone"/>
                             </div>
                             <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
-                            <div class="cal-form2-submit">
+                            <div class="cal-form3-submit">
                                 <input id="bookPrice" type="button" value="确认提交" style="background: #F79C33"/>
                             </div>
+                            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+                            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
                         </form>
                     </div>
                 </div>
@@ -143,9 +148,12 @@
             <div class="header"><label>今日还剩</label><span></span><b></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
             <div style="width: 94%;border-bottom:1px solid #dddddd;position: absolute;left:3%;top:46%;z-index: 10;"></div>
         </div>
-        <form action="" class="cal-form">
+        <form action="" class="cal-form" id="cal-form">
+            <input type="hidden" value="post" name="action">
+            <input type="hidden" value="14" name="diyid">
+            <input type="hidden" value="2" name="do">
             <div>
-                <input type="number" placeholder="请输入房间面积"/>
+                <input type="number" placeholder="请输入房间面积" name="square"/>
             </div>
             <div>
                 <select class="selectbox" id="11" name="">
@@ -155,11 +163,13 @@
                 </select>
             </div>
             <div>
-                <input type="number" placeholder="请输入手机号,报价结果将发送到你手机"/>
+                <input type="number" placeholder="请输入手机号,报价结果将发送到你手机" name="phone"/>
             </div>
             <div>
-                <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
+                <input type="button" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
             </div>
+            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
         </form>
     </div>
     <!--价格结果弹出框-->
@@ -227,7 +237,10 @@
             <div style="width: 90%;border-bottom:1px solid #dddddd;position: absolute;left:5%;top:46%;z-index: 10;"></div>
         </div>
         <div style="height: 1px;border-bottom: 1px solid #dddddd;width: 96%;margin: 0 auto"></div>
-        <form action="" class="cal-form2">
+        <form action="" class="cal-form2" id="cal-form3">
+            <input type="hidden" value="post" name="action">
+            <input type="hidden" value="14" name="diyid">
+            <input type="hidden" value="2" name="do">
             <div class="choose-machine">
                 <span>选择机型</span>
             </div>
@@ -317,11 +330,13 @@
                 </li>
             </ul>
             <div class="phone-number">
-                <input type="number" placeholder="*请输入手机号，报价结果将发送到您手机" style="font-size: 1.5rem;"/>
+                <input type="number" name="phone" placeholder="*请输入手机号，报价结果将发送到您手机" style="font-size: 1.5rem;"/>
             </div>
-            <div class="cal-form2-submit">
-                <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即计算"/>
+            <div class="cal-form3-submit">
+                <input type="button" value="立即计算"/>
             </div>
+            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
         </form>
     </div>
     <!--滚动栏-->
@@ -955,22 +970,27 @@
             <div class="header" style="font-size: 1.33rem;width: 34%;left: 33%">今日已有<label style="font-size: 1.33rem;">126</label>人报名</div>
             <div style="width: 98%;border-bottom:1px solid #dddddd;position: absolute;top:46%;z-index: 10;"></div>
         </div>
-        <form action="" class="cal-form2">
+        <form action="" class="cal-form2" id="cal-form4">
+            <input type="hidden" value="post" name="action">
+            <input type="hidden" value="14" name="diyid">
+            <input type="hidden" value="2" name="do">
             <ul class="choose-machine-content">
                 <li class="contact-form-block" style="background: #16A0E8;">专业暖通设计师</li>
                 <li class="contact-form-block" style="background: #F26D4F;">专业暖通设计师</li>
                 <li class="contact-form-block" style="background: #F79C33;">专业暖通设计师</li>
             </ul>
             <div class="customer-name">
-                <input type="text" style="width: 92%" placeholder="请输入您的姓名"/>
+                <input type="text" style="width: 92%" name="name" placeholder="请输入您的姓名"/>
             </div>
             <div class="phone-number">
-                <input type="number" style="width: 92%" placeholder="请输入您的手机"/>
+                <input type="number" style="width: 92%" name="phone" placeholder="请输入您的手机"/>
             </div>
             <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
-            <div class="cal-form2-submit">
-                <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即报名" style="background: #F79C33"/>
+            <div class="cal-form3-submit">
+                <input type="button" value="立即报名" style="background: #F79C33"/>
             </div>
+            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
         </form>
     </div>
     <!--地图模块-->

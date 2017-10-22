@@ -419,9 +419,12 @@
                 <div class="header"><label>今日还剩</label><span>3</span><b>6</b><i style="margin-right: 2%;font-style: normal">5</i><label>免费名额</label></div>
                 <div style="width: 94%;border-bottom:1px solid #dddddd;position: absolute;left:3%;top:46%;z-index: 10;"></div>
             </div>
-            <form action="" class="cal-form">
+            <form action="" class="cal-form" id="cal-from-business">
+                <input type="hidden" value="post" name="action">
+                <input type="hidden" value="14" name="diyid">
+                <input type="hidden" value="2" name="do">
                 <div>
-                    <input type="number" placeholder="请输入建筑面积"/>
+                    <input type="number" placeholder="请输入建筑面积" name="square"/>
                 </div>
                 <div>
                     <select class="selectbox" id="11" name="">
@@ -431,11 +434,13 @@
                     </select>
                 </div>
                 <div>
-                    <input type="number" placeholder="请输入手机号,报价结果将发送到你手机"/>
+                    <input type="number" placeholder="请输入手机号,报价结果将发送到你手机" name="phone"/>
                 </div>
                 <div>
-                    <input type="button" data-target="#PriceModal" data-toggle="modal" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
+                    <input type="button"  value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
                 </div>
+                <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+                <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
             </form>
         </div>
         <!--滚动栏-->
@@ -634,7 +639,7 @@
                                 <input type="number" style="width: 92%" placeholder="请输入您的手机" name="customerPhone"/>
                             </div>
                             <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
-                            <div class="cal-form2-submit">
+                            <div class="cal-form3-submit">
                                 <input id="bookPrice" type="button" value="确认提交" style="background: #F79C33"/>
                             </div>
                         </form>
@@ -650,6 +655,56 @@
     <script src="js/jquery.SuperSlide.2.1.1.js"></script>
     <script src="js/main.js"></script>
     <script>
+        var reg = /^1[34578]\d{9}$/;
+        $("#cal-from-business input[type='button']").click(function(){
+            var square = $("#cal-from-business input[name='square']").val();
+            var phone = $("#cal-from-business input[name='phone']").val();
+            var doValue = $('#cal-from-business input[name="do"]').val();
+            var dede_fields= $('#cal-from-business input[name="dede_fields"]').val();
+            var result = reg.test(phone);
+            if(!square){
+                alert("请先输入房间面积！");
+                return;
+            }
+            if(!phone){
+                alert("请先输入手机号码！");
+                return;
+            }
+            if(phone && !reg.test(phone)){
+                alert("请输入正确的手机号码！");
+                return;
+            }
+            /*  获取select 选中的 text :
+             $("#ddlregtype").find("option:selected").text();
+             获取select选中的 value:
+             $("#ddlregtype ").val();
+             */
+            if(square && phone && result){
+                $.ajax({
+                    cache: true,
+                    type: "POST",
+                    url:"",//"/plus/diy.php"
+                    data:{
+                        "phone": phone,
+                        "action": "post",
+                        "diyid":14,
+                        "do":doValue,
+                        "dede_fields":dede_fields,
+                        "dede_fieldshash":"f8130eef5454e4d8a0e15adafca06a59"
+                    },
+                    async: false,
+                    error: function(request) {
+                        //alert("Connection error");
+                        console.log("提交失败。");
+                    },
+                    success: function(data) {
+                        $("#PriceModal").modal('show');
+                        var square = $("#cal-from-business input[name='square']").val("");
+                        var phone = $("#cal-from-business input[name='phone']").val("");
+                    }
+                });
+            }
+        });
         jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
     </script>
 </body>

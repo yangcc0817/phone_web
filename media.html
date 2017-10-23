@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>media_web</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <!--[if lt IE 9]>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ucKzemKTwi3ZOur93IAYKQW1KAuIXRA7"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />-->
+</head>
+<body style="padding-bottom: 50px;">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" style="margin-bottom: 0">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img class="logo" src="img/LOGO.png" alt=""/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- slider content-->
+    <a href="" id="top"></a>
+    <div class="swiper-container" id="swiper1">
+        <div class="swiper-wrapper" >
+            <div class="swiper-slide">
+                <a href="#"><img class="img-responsive" src="img/1080_hitachi-22.jpg" alt=""/></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="img-responsive" src="img/1080_hitachi-33.jpg" alt=""/></a>
+            </div>
+            <div class="swiper-slide">
+                <a href="#"><img class="img-responsive" src="img/1080_hitachi-11.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!--预约套餐按钮-->
+        <a class="book-button" data-target="#myModal" data-toggle="modal">预约该套餐</a>
+        <!--黑色文字定位-->
+        <div class="swiper-text-location">
+            <div style="font-size: 2rem;padding-left: 2%">美的家用中央空调</div>
+            <div style="font-size: 1.5rem;">开创中国家用中央空调新时代</div>
+        </div>
+    </div>
+    <!--输入弹框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative">
+                <div style="position: relative;">
+                    <span class="modal-close msg-close"></span>
+                </div>
+                <div class="modal-body">
+                    <div class="clear">
+                        <h4 style="width: 70%;margin: 2% auto;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">专业的舒适家居供应商</h4>
+                        <div style="margin:1% 0;position: relative;min-height: 2em;">
+                            <div class="header" style="font-size: 1.33rem;width: 46%;left: 27%">今日已有<label style="font-size: 1.33rem;">126</label>人报名</div>
+                            <div style="width: 98%;border-bottom:1px solid #dddddd;position: absolute;top:46%;z-index: 10;"></div>
+                        </div>
+                        <div class="alert alert-danger hidden" role="alert" style="padding-bottom:7%;padding-top:3%;width: 92%;margin: 0 auto;height: 2em;">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            <span class="alert-content"></span>
+                        </div>
+                        <form action="" class="cal-form2" id="cal-form2">
+                            <input type="hidden" value="post" name="action">
+                            <input type="hidden" value="14" name="diyid">
+                            <input type="hidden" value="2" name="do">
+                            <div class="customer-name">
+                                <input type="text" style="width: 92%" placeholder="请输入您的姓名" name="customerName"/>
+                            </div>
+                            <div class="phone-number">
+                                <input type="number" style="width: 92%" placeholder="请输入您的手机" name="customerPhone"/>
+                            </div>
+                            <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
+                            <div class="cal-form3-submit">
+                                <input id="bookPrice" type="button" value="确认提交" style="background: #F79C33"/>
+                            </div>
+                            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+                            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--商用中央空调-->
+    <div class="banner">
+        <div style="position: absolute;left: 5.8%;top:9.2%;z-index: 999;width: 70%">
+            <div style="font-weight: bold;font-size: 2rem;">商用中央空调</div>
+            <p style="color:#BBBBBB;font-size: 1.33rem">写字楼、酒店会所、厂房、房产配套</p>
+            <a class="click_check">
+                点击查看<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div style="position: absolute;left: 0;top:0;z-index: 99;border: 1px solid #16A0E8;border-radius: 3px;width: 100%">
+            <img style="width: 100%;border-radius: 3px;" class="img-responsive" src="img/background.jpg" alt=""/>
+        </div>
+    </div>
+    <!--3 hot products-->
+    <div class="hot-products">
+        <div class="products-title">
+            <h4 class="main-title">美的家用中央空调三大热销机型</h4>
+            <div style="width: 74%;" class="title-bottom-line"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem">分别是TR系列&nbsp;TR+S系列&nbsp;TR+Mini系列</p>
+        </div>
+        <ul class="clear">
+            <li class="lf product-block" style="width: 27%;margin-left: 5.3%;">
+                <p style="background: #20A3E8;">
+                    <img src="img/hot_pro_1.png" class="img-responsive"   alt=""/>
+                </p>
+                <div style="font-size: 1.65rem;font-weight: bold;">TR系列</div>
+                <div style="font-size: 1.21rem">适合90-200方公寓</div>
+            </li>
+            <li class="lf product-block" style="width: 27%;margin-left: 5.3%;">
+                <p style="background: #73B619;">
+                    <img src="img/hot_pro_2.png" class="img-responsive" alt=""/>
+                </p>
+                <div style="font-size: 1.65rem;font-weight: bold">TR+S系列</div>
+                <div style="font-size: 1.21rem">适合60-140方公寓</div>
+            </li>
+            <li class="lf product-block" style="width: 27%;margin-left: 5.3%;">
+                <p style="background: #F26C4F">
+                    <img src="img/hot_pro_3.png" class="img-responsive" alt=""/>
+                </p>
+                <div style="font-size: 1.65rem;font-weight: bold">TR+Mini系列</div>
+                <div style="font-size: 1.21rem">适合200方以上别墅</div>
+            </li>
+        </ul>
+    </div>
+    <!--calculate-block1-->
+    <div style="margin-top: 10px;">
+        <img src="img/title.png" style="width: 100%" alt=""/>
+    </div>
+    <!-- calculate form-->
+    <div class="form-box-show">
+        <div style="margin:10px 0;position: relative;min-height: 2em;">
+            <div class="header"><label>今日还剩</label><span></span><b></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
+            <div style="width: 94%;border-bottom:1px solid #dddddd;position: absolute;left:3%;top:46%;z-index: 10;"></div>
+        </div>
+        <form action="" class="cal-form" id="cal-form">
+            <input type="hidden" value="post" name="action">
+            <input type="hidden" value="14" name="diyid">
+            <input type="hidden" value="2" name="do">
+            <div>
+                <input type="number" placeholder="请输入房间面积" name="square"/>
+            </div>
+            <div>
+                <select class="selectbox" id="11" name="">
+                    <option value="1">一室一厅</option>
+                    <option value="2">两室一厅</option>
+                    <option value="3">三室一厅</option>
+                </select>
+            </div>
+            <div>
+                <input type="number" placeholder="请输入手机号,报价结果将发送到你手机" name="phone"/>
+            </div>
+            <div>
+                <input type="button" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
+            </div>
+            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
+        </form>
+    </div>
+    <!--价格结果弹出框-->
+    <div class="modal fade" id="PriceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="position: relative">
+                <div style="position: relative;">
+                    <span class="modal-close msg-close PriceModal-close"></span>
+                </div>
+                <div class="modal-body" style="position: relative">
+                    <!--<div class="sanjiao"></div>-->
+                    <div style="background: #F5F0F5;">
+                        <h4 style="width: 70%;margin: 1% auto;padding-top: 4%;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">您选择的预估价为</h4>
+                        <p style="width: 50%;margin: 0 auto;text-align: center"><b style="font-size: 2rem;color:#828181">3.8</b><span style="font-size: 1.55rem;">万元左右</span></p>
+                    </div>
+                    <div style="padding-top: 33px;border: 1px solid #dddddd;border-top: 1px solid transparent">
+                        <div style="width: 50%;margin: 0 auto;color:#828181;border: 1px solid #dddddd;border-radius: 5px;text-align: center;padding: 1%;">
+                            <p><b style="font-size: 1.75rem;">设备费：</b><span style="font-size: 1.55rem;">3.2万元</span></p>
+                            <div><b style="font-size: 1.75rem;">安装费：</b><span style="font-size: 1.55rem;">0.6万元</span></div>
+                        </div>
+                        <div style="font-size: 1.55rem;color:#16A0E8;margin: 2% auto;text-align: center" >我们的报价包含设计费、打孔费、运输费、风口加长费、发票税费、管理费......</div>
+                        <div style="font-size: 1.55rem;color:#16A0E8;text-align: center" >不含隐藏费用，一口价！！！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--知道了弹出框-->
+    <div class="modal fade" id="successModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div style="font-size: 2rem;font-weight:bold;width: 80%;margin: 5% auto;color:#16A0E8;text-align: center;">系统已收到您的提交！！！</div>
+                    <div style="width: 87%;margin: 0 auto;color:#A66D82;font-size: 1.5rem;margin-bottom: 5%;text-indent: 15px;"> 2个小时内我们的暖通顾问将给您回电，免费提供专业的方案配置咨询服务。</div>
+                    <div><a class="successModal-close">我知道了</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--滚动栏-->
+    <div class="customer-slider">
+        <div style="text-align: center;">
+            <div style="font-size: 1.75rem;color:#009688;padding-top: 2%">共有&nbsp;<span style="color:#F27154;">36956</span>&nbsp;位客户获得了报价</div>
+        </div>
+        <div class="txtMarquee-top">
+            <div class="bd">
+                <ul class="infoList" style="font-size: 1.25rem">
+                    <li><span style="margin: 0 10px;">120m<sup>2</sup></span>137****5678 <span style="margin: 0 10px;">三室两厅</span>6小时前刚刚获取了报价</li>
+                    <li><span style="margin: 0 10px;">120m<sup>2</sup></span>137****5678 <span style="margin: 0 10px;">三室两厅</span>6小时前刚刚获取了报价</li>
+                    <li><span style="margin: 0 10px;">120m<sup>2</sup></span>137****5678 <span style="margin: 0 10px;">三室两厅</span>6小时前刚刚获取了报价</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+
+    <!--三大机型简介-->
+    <div class="products-introduce">
+        <div class="products-title">
+            <h4 class="main-title">美的家用中央空调 三大热销机型简介</h4>
+            <div class="title-bottom-line" style="width: 84%"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem;">分别是TR系列&nbsp;TR+S系列&nbsp;TR+Mini系列</p>
+        </div>
+        <ul class="main-introduce">
+            <li style="overflow: hidden">
+                <p class="lf" style="width: 50%"><img class="img-responsive" src="img/540-1.jpg" alt=""/></p>
+                <ul class="lf" style="width: 50%;padding-left: 3%">
+                    <li>
+                        <div class="introduce-title">TR+ Mini系列</div>
+                    </li>
+                    <li class="title-bottom-line" style="width: 74%;border-bottom: 1px solid #dddddd;margin-left: 0;"></li>
+                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：外机小巧，便于安装，非常适合90-120方公寓户型，性价比非常高</li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #16A0E8">
+                            <img  class="img-responsive" src="img/raw_1508465316.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">迷你身形</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">放置更灵活 安装无烦恼</div>
+                        </div>
+                    </li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #F79C33">
+                            <img  class="img-responsive" src="img/shiwaiji.png" style="padding: 18%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">体积小巧</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">内外机小巧，安装方便</div>
+                        </div>
+                    </li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #F26D4F">
+                            <img  class="img-responsive" src="img/power_compare.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">节能</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">省电就是省钱</div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li style="overflow: hidden">
+                <ul class="lf" style="width: 50%;padding-left: 3%">
+                    <li>
+                        <div class="introduce-title">TR系列</div>
+                    </li>
+                    <li class="title-bottom-line" style="width: 62%;border-bottom: 1px solid #dddddd;margin-left: 0;"></li>
+                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：乐享家二代，高效变频，智能控制</li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #16A0E8">
+                            <img  class="img-responsive" src="img/air_fan.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">节能</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">超节能经济运行</div>
+                        </div>
+                    </li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #F79C33">
+                            <img  class="img-responsive" src="img/temperature.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">精准</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">无极变频超精准温度</div>
+                        </div>
+                    </li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #F26D4F">
+                            <img  class="img-responsive"  style="padding: 13%" src="img/night.png" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">静音</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">无忧静音环境</div>
+                        </div>
+                    </li>
+                </ul>
+                <p class="lf" style="width: 50%"><img class="img-responsive" src="img/540-2.jpg" alt=""/></p>
+            </li>
+            <li style="overflow: hidden">
+                <p class="lf" style="width: 50%"><img class="img-responsive" src="img/540-3.jpg" alt=""/></p>
+                <ul class="lf" style="width: 50%;padding-left: 3%">
+                    <li>
+                        <div class="introduce-title">TR+S系列</div>
+                    </li>
+                    <li class="title-bottom-line" style="width: 62%;border-bottom: 1px solid #dddddd;margin-left: 0;"></li>
+                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：适合150方以上的大户型，省电高效</li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #16A0E8">
+                            <img  class="img-responsive" src="img/chip.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">变频</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">全直流变频 尊享专属</div>
+                        </div>
+                    </li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #F79C33">
+                            <img  class="img-responsive" src="img/group.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">功率</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">外机从8P到48匹自由组合</div>
+                        </div>
+                    </li>
+                    <li class="clear mb10">
+                        <div class="left-img" style="background:  #F26D4F">
+                            <img  class="img-responsive" src="img/compressor.png" style="padding: 13%" alt=""/>
+                        </div>
+                        <div class="right-text">
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">压缩机</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">高效涡旋式压缩机</div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="grey-banner"></div>
+    <!--不得不说的特色-->
+    <div class="product-feature mt3 mb3">
+        <div class="products-title">
+            <h4 class="main-title">不得不说的美的中央空调特色</h4>
+            <div class="title-bottom-line" style="width: 69%"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem">开创中国家用中央空调新时代</p>
+        </div>
+        <ul class="clear">
+            <li class="feature-block">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/search.png" alt=""/>
+                </div>
+                <div style="text-align:center;font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">技术</div>
+            </li>
+            <li class="feature-block">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/voice.png" alt=""/>
+                </div>
+                <div style="font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">超静音</div>
+            </li>
+            <li class="feature-block">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/mminternal%20unit%20.png" alt=""/>
+                </div>
+                <div style="text-align:center;font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">超薄</div>
+            </li>
+            <li class="feature-block">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/energy-saving%20mode.png" alt=""/>
+                </div>
+                <div style="font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">IPLV(C)</div>
+            </li>
+            <li class="desc-text" style="width: 18%"><div style="font-size: 1.33rem;color:#BBBBBB">多项核心专利</div></li>
+            <li class="desc-text" style="width: 19%"><div style="font-size: 1.33rem;color:#BBBBBB">内机仅26db</div></li>
+            <li class="desc-text" style="width: 27%"><div style="font-size: 1.33rem;color:#BBBBBB">内机厚度210mm</div></li>
+            <li class="desc-text" style="width: 15%"><div style="font-size: 1.33rem;color:#BBBBBB">高效节能</div></li>
+        </ul>
+    </div>
+    <div class="grey-banner"></div>
+    <!--浅薄设计-->
+    <div style="padding-top: 2%">
+        <div class="products-title">
+            <h4 class="main-title">纤薄设计 时尚大气</h4>
+            <div class="title-bottom-line" style="width: 45%"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem">210mm纤薄裸机厚度 把空间腾出来 给你不一样的浅薄体验</p>
+        </div>
+        <div>
+            <img src="img/chin_design.png" class="img-responsive" alt=""/>
+        </div>
+    </div>
+    <!--智能控制-->
+    <div style="padding-top: 2%">
+        <div class="products-title">
+            <h4 class="main-title">智能控制 方便省心</h4>
+            <div class="title-bottom-line" style="width: 45%"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem">移动智能操控，远程开启/关机，随时查询运行状态，一机多线操作</p>
+        </div>
+        <div>
+            <img src="img/easy_control.png" class="img-responsive" alt=""/>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--优缺点-->
+    <div class="clear good-items">
+        <div class="lf">
+            <div style="font-size: 1.45rem;font-weight: bold;color:#16A0E8;" class="mt3 mb3">一张图告诉你，为啥要选美的家用中央空调？</div>
+            <p style="font-size: 1.23rem;color:#16A0E8;">第三者的角度，全面，客观分析美的中央空调优缺点</p>
+            <a class="check_button mb3" href="media_detail.html">
+                <span style="font-size: 1.45rem;font-weight: bold">点击查看</span>
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="rt" style="width: 20%;position:absolute;top:6%;right:0% ">
+            <img class="img-responsive" src="img/raw_1505481423.png" alt=""/>
+        </div>
+    </div>
+    <!--选择中央空调-->
+    <div class="clear good-items">
+        <div class="lf">
+            <div style="font-size: 1.45rem;font-weight: bold;color:#F79C33;" class="mt3 mb3">一张图告诉你，美的和格力哪个更好？</div>
+            <p style="font-size: 1.23rem;color:#F79C33;">第三者的角度，全面，客观分析美的和格力的优缺点</p>
+            <a class="check_button mb3" style="background: #F79C33;border:#F79C33; " href="media_compare.html">
+                <span style="font-size: 1.45rem;font-weight: bold">点击查看</span>
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="rt" style="width: 16%;position:absolute;top:6%;right:2% ">
+            <img class="img-responsive" src="img/raw_1505481532.png" alt=""/>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--超值套餐-->
+    <div>
+        <div class="products-title">
+            <h4 class="main-title">超值套餐&nbsp;省得不止一点点</h4>
+            <div class="title-bottom-line" style="width: 61%"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem;">真心实惠, 外面比过价就知道了</p>
+        </div>
+        <ul>
+           <li style="border: 2px solid #F79C33;margin: 1%;border-radius: 3px;padding-bottom: 3%">
+                <h4 class="taocan-title" style="width: 90%">90方户型 超值 美的套餐&nbsp;巨省20%</h4>
+                <div style="font-size:1.5rem;text-align: center;color:#aaaaaa;margin-bottom: 2%">美的TR+Mini系列  一拖三</div>
+                <div class="clear">
+                    <div class="lf" style="width: 55%;background:#E8DCE8;margin-left: 2%;border-radius: 3px;">
+                        <img class="img-responsive" style="padding: 0 12%" src="img/raw_1508467092.png" alt=""/>
+                    </div>
+                    <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#aaaaaa">
+                        <div style="border-bottom: 1px solid #dddddd;font-size: 1.5rem;">市场价￥<span style="font-size: 2.1rem;font-weight: bold;color:#F79C33; ">36000</span>元</div>
+                        <div style="font-size: 1.1rem;margin-top: 1%">*我们坚持给你最便宜</div>
+                        <a class="view-price-button" data-target="#myModal" data-toggle="modal">查看未莱售价</a>
+                        <div style="font-size: 1.1rem;margin-left: 17%">*今日已有36人报价</div>
+                    </div>
+                </div>
+           </li>
+            <li style="border: 2px solid #16A0E8;margin: 1%;margin-top:2%;border-radius: 3px;padding-bottom: 3%">
+                <h4 class="taocan-title" style="width: 90%">110-140方户型 超值 美的套餐&nbsp;巨省20%</h4>
+                <div style="font-size:1.5rem;text-align: center;color:#aaaaaa;margin-bottom: 2%">美的TR+S系列  一拖四</div>
+                <div class="clear">
+                    <div class="lf" style="width: 55%;background:#E8DCE8;margin-left: 2%;">
+                        <img class="img-responsive" style="padding: 0 12%" src="img/media.png" alt=""/>
+                    </div>
+                    <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#aaaaaa">
+                        <div style="border-bottom: 1px solid #dddddd">市场价￥<span style="font-size: 1.7em;font-weight: bold;color:#16A0E8; ">36000</span>元</div>
+                        <div style="font-size: 1.1rem;margin-top: 1%">*我们坚持给你最便宜</div>
+                        <a class="view-price-button" style="background:#16A0E8;" data-target="#myModal" data-toggle="modal">查看未莱售价</a>
+                        <div style="font-size: 1.1rem;margin-left: 17%">*今日已有36人报价</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="grey-banner"></div>
+    <!--代金券-->
+    <div class="cash-coupon">
+        <div class="clear" style="margin-bottom: 1%">
+            <div class="lf cash-coupon-title">美的中央空调-代金券</div>
+            <a class="rt cash-coupon-little-button" href="#">限量领取</a>
+        </div>
+        <div class="cash-coupon-money">
+            <div style="margin: 0 auto;text-align: center;">
+                <span style="font-size: 3rem;">￥</span><b style="font-size: 7.5rem;font-weight: 500">500</b><span style="font-size: 3rem;">元</span>
+            </div>
+            <div class="cash-coupon-num">仅剩398份</div>
+        </div>
+        <div class="cash-coupon-center">
+            <div class="left-round"></div>
+            <div class="dotted-line"></div>
+            <div class="right-round"></div>
+        </div>
+        <div class="cash-coupon-bottom">
+            <a data-target="#myModal" data-toggle="modal" class="cash-coupon-bottom-button">立即领取</a>
+            <div style="font-size: 1.23rem;text-align: center;margin: 2% 0;">*注:一个用户只能使用一次，每次仅能使用一张,单价满3万可用</div>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--下单送好礼-->
+    <div class="mt3">
+        <div class="products-title">
+            <h4 class="main-title">下单选未莱&nbsp;好礼不会停</h4>
+            <div class="title-bottom-line" style="width: 51%"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem;">这些优惠, 其它公司不一定会有哦</p>
+        </div>
+        <ul class="gift-content clear">
+            <li  class="lf clear">
+                <div class="gift-content-bk">
+                    <img  class="img-responsive" style="padding: 15%" src="img/raw_1505720949.png" alt=""/>
+                </div>
+                <div class="gift-content-text lf">
+                    <p>舒适升级</p>
+                    <div>+99元升级为低温除湿机</div>
+                </div>
+            </li>
+            <li  class="lf clear">
+                <div class="gift-content-bk">
+                    <img  class="img-responsive" style="padding: 15%" src="img/raw_1505720974.png" alt=""/>
+                </div>
+                <div class="gift-content-text lf">
+                    <p>线控器</p>
+                    <div>+1元换彩屏线控器</div>
+                </div>
+            </li>
+            <li  class="lf clear">
+                <div class="gift-content-bk">
+                    <img  class="img-responsive" style="padding: 15%" src="img/raw_1505721298.png" alt=""/>
+                </div>
+                <div class="gift-content-text lf">
+                    <p>超长维保</p>
+                    <div>厂家5年质保</div>
+                </div>
+            </li>
+            <li  class="lf clear">
+                <div class="gift-content-bk">
+                    <img  class="img-responsive" style="padding: 15%" src="img/raw_1505721452.png" alt=""/>
+                </div>
+                <div class="gift-content-text lf">
+                    <p>签约即送</p>
+                    <div>送日立原装遥控器</div>
+                </div>
+            </li>
+            <li  class="lf clear">
+                <div class="gift-content-bk">
+                    <img  class="img-responsive" style="padding: 15%" src="img/raw_1505721853.png" alt=""/>
+                </div>
+                <div class="gift-content-text lf">
+                    <p>免费打孔</p>
+                    <div>免费开槽+打孔</div>
+                </div>
+            </li>
+            <li  class="lf clear">
+                <div class="gift-content-bk">
+                    <img  class="img-responsive" style="padding: 15%" src="img/raw_1505721982.png" alt=""/>
+                </div>
+                <div class="gift-content-text lf">
+                    <p>送发票</p>
+                    <div>免费增票/普票</div>
+                </div>
+            </li>
+        </ul>
+        <a data-target="#myModal" data-toggle="modal" class="gift-content-order">预约购买</a>
+    </div>
+    <div class="grey-banner"></div>
+    <!--阳光价-->
+    <div class="mt3">
+        <div class="products-title">
+            <h4 class="main-title">阳光价 • 全包价 • 一口价</h4>
+            <div class="title-bottom-line" style="width: 59%"></div>
+            <p style="padding: 2% 0;font-size: 1.33rem;">未莱承诺: 我们的价格包含量房设计、配送、设备、辅料、施工、售后全部费用。没有其他任何隐形消费</p>
+        </div>
+        <ul class="clear">
+            <li class="feature-block" style="margin-left: 13%;width: 16%">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/raw_1505723954.png" alt=""/>
+                </div>
+            </li>
+            <li class="feature-block" style="margin-left: 13%;width: 16%">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/raw_1505724048.png" alt=""/>
+                </div>
+            </li>
+            <li class="feature-block" style="margin-left: 13%;width: 16%">
+                <div class="img-background">
+                    <img  class="img-responsive" src="img/raw_1505724231.png" alt=""/>
+                </div>
+            </li>
+            <li class="lf mt3 mb3 feature-block-text">没有隐形消费</li>
+            <li class="lf mt3 mb3 feature-block-text">自有施工团队</li>
+            <li class="lf mt3 mb3 feature-block-text">比市场价便宜</li>
+        </ul>
+    </div>
+    <div class="grey-banner"></div>
+    <!--为什么选择未莱-->
+    <div class="mt3">
+        <div class="products-title">
+            <h4 class="main-title">为什么选择未莱</h4>
+            <div class="title-bottom-line" style="width: 37%"></div>
+            <p style="padding: 2% 0;font-size: 1.33rem;">4大保障&nbsp;选择更放心</p>
+        </div>
+        <ul style="color:#828181">
+            <li class="clear mb3">
+                <ul style="width: 50%;float: left;text-align: right;padding-right: 2%;margin-top: 3%">
+                   <li  class="mb3" style="font-size: 1.75rem;font-weight: bold;">6万+客户</li>
+                   <li class="mb3 rem1-33">未莱线下服务6万余家装客户</li>
+                   <li class="mb3 rem1-33">100多个工装项目</li>
+                </ul>
+                <div style="width: 29%;float: left;margin-left: 9%">
+                    <img class="img-responsive" src="img/raw_1505731641.jpeg" alt=""/>
+                </div>
+            </li>
+            <li class="clear mb3" style="color:#16A0E8;">
+                <div style="width: 33%;float: left;margin-left: 5%;">
+                    <img class="img-responsive" src="img/raw_1505874007.png" alt=""/>
+                </div>
+                <ul style="width: 54%;float: left;text-align: left;margin-left: 6%">
+                    <li  class="mb3" style="font-size: 1.75rem;font-weight: bold;">12年线下经验积累</li>
+                    <li class="mb3 rem1-33">2005-2017年</li>
+                    <li class="mb3 rem1-33">多年来一直从事暖通舒适家居行业</li>
+                </ul>
+            </li>
+            <li class="clear mb3" style="color:#F79C33;">
+                <ul style="width: 50%;float: left;text-align: right;padding-right: 2%;margin-top: 3%">
+                    <li  class="mb3" style="font-size: 1.75rem;font-weight: bold;">专业施工</li>
+                    <li class="mb3 rem1-33">全部都有安装施工团队</li>
+                    <li class="mb3 rem1-33">考核上刚,考核淘汰</li>
+                </ul>
+                <div style="width: 36%;float: left;margin-left: 9%">
+                    <img class="img-responsive" src="img/raw_1505873908.png" alt=""/>
+                </div>
+            </li>
+            <li class="clear" style="margin-top: 5%;color:#F26D4F;">
+                <div style="width: 34%;float: left;margin-left: 3%;">
+                    <img class="img-responsive" src="img/raw_1505873845.png" alt=""/>
+                </div>
+                <ul style="width: 54%;float: left;text-align: left;margin-left: 6%">
+                    <li  class="mb3" style="font-size: 1.75rem;font-weight: bold;">专业售后</li>
+                    <li class="mb3 rem1-33">30余名售后团队</li>
+                    <li class="mb3 rem1-33">售后反应速度质量都要好于厂家的</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="grey-banner"></div>
+    <!--历史-->
+    <div style="margin-top: 18%">
+        <div style="position: relative">
+        <div class="products-title" style="position: absolute;width:100%;top:-20%;">
+            <h4 class="main-title">我们的历史</h4>
+            <div style="width: 29%;border-bottom: 1px solid #16A0E8;height: 1px;margin: 0 auto;"></div>
+            <div style="padding: 1% 0;font-size: 1.33rem;">6大保障&nbsp;选择更放心</div>
+        </div>
+        <div>
+            <img class="img-responsive" src="img/raw_1502717269.png" alt=""/>
+        </div>
+    </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--日立代理资质-->
+    <div class="mt3" style="padding-bottom: 2%">
+        <div class="products-title">
+            <h4 class="main-title" >美的一级代理资质</h4>
+            <div class="title-bottom-line" style="width: 40%"></div>
+            <p style="padding: 2% 0;font-size: 1.33rem;">厂家授权专业经销商资质 + 安装资质</p>
+        </div>
+        <ul style="overflow: hidden">
+            <li style="width: 30%;float: left;margin-left: 3%">
+                <div style="border: 1px solid #BBBBBB">
+                    <img class="img-responsive" style="padding: 5%" src="img/media_ct1.jpg" alt=""/>
+                </div>
+                <div class="company-authorize-text">美的销售授权</div>
+            </li>
+            <li style="width: 30%;float: left;text-align: center;margin-left: 3%">
+                <div style="border: 1px solid #BBBBBB">
+                    <img class="img-responsive" style="padding: 5%" src="img/ct2.jpg" alt=""/>
+                </div>
+                <div class="company-authorize-text">公司资质</div>
+            </li>
+            <li style="width: 30%;float: left;margin-left: 3%">
+                <div style="border: 1px solid #BBBBBB">
+                    <img class="img-responsive" style="padding: 5%" src="img/media_ct1.jpg" alt=""/>
+                </div>
+                <div class="company-authorize-text">美的安装授权</div>
+            </li>
+        </ul>
+    </div>
+    <div class="grey-banner"></div>
+    <!--未莱资质-->
+    <div style="margin-top: 8%">
+        <div class="products-title">
+            <h4 class="main-title">未莱的资质&荣誉</h4>
+            <div class="title-bottom-line" style="width: 38%"></div>
+            <p style="padding: 2% 0;font-size: 1.33rem;">数十年线下的耕耘,成就未莱的今天</p>
+        </div>
+        <div>
+            <img style="width: 100%" class="img-responsive"  src="img/raw_1502442459.png" alt=""/>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--他们选择了未莱-->
+    <div style="margin-top: 5%">
+        <div class="products-title">
+            <h4 class="main-title" >他们选择了未莱</h4>
+            <div class="title-bottom-line" style="width: 35%"></div>
+            <p style="padding: 2% 0;font-size: 1.33rem;">我们除了家装零售,还有工装</p>
+        </div>
+        <div>
+            <img style="width: 100%" class="img-responsive" src="img/2017-09-24_220806.jpg" alt=""/>
+        </div>
+        <div style="position: relative">
+            <div style="position: absolute;left: 24%;top:35%">
+                <ul style="color:white;">
+                    <li style="font-weight: bold;font-size: 2.1rem;text-align: center">120000户+</li>
+                    <li style="font-size: 2.1rem;margin-bottom: 7%;text-align: center">未莱12年经验</li>
+                    <li style="font-style:italic;font-size: 1.25rem;">生活无限进化，未莱始终在你身边！</li>
+                </ul>
+            </div>
+            <div>
+                <img class="img-responsive" style="width: 100%" src="img/scene.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--线下专业店-->
+    <div style="margin-top: 5%">
+        <div class="products-title">
+            <h4 class="main-title" >未莱 日立线下专业店</h4>
+            <div class="title-bottom-line" style="width: 51%"></div>
+            <p style="padding: 2% 0;font-size: 1.33rem;">1700平3层综合体验展厅</p>
+        </div>
+        <div>
+            <img style="width: 100%" class="img-responsive" src="img/raw_1502443697.png" alt=""/>
+        </div>
+        <ul class="clear mt3" style="padding-bottom: 5%;color:#828181">
+            <li class="shop-block">
+                <div class="shop-img-background" style="border: 1px solid #828181">
+                    <img  style="padding: 17%" class="img-responsive" src="img/raw_1505738132.png" alt=""/>
+                </div>
+                <div style="font-size: 1.75rem;font-weight: bold;text-align: center;">1700方</div>
+                <div style="width:6em;font-size: 1.33rem;position: absolute;left:-5%;top:103%;"></div>
+            </li>
+            <li class="shop-block">
+                <div class="shop-img-background">
+                    <img  style="padding: 10%" class="img-responsive" src="img/raw_1505738105.png" alt=""/>
+                </div>
+                <div style="font-size: 1.75rem;font-weight: bold;text-align: center;">10+</div>
+                <div style="width:9em;font-size: 1.33rem;position: absolute;left:-29%;top:103%;"></div>
+            </li>
+            <li class="shop-block">
+                <div class="shop-img-background"  style="border: 1px solid #F79C33">
+                    <img  style="padding: 10%" class="img-responsive" src="img/raw_1505738220.png" alt=""/>
+                </div>
+                <div style="font-size: 1.75em;font-weight: bold;text-align: center;">30+</div>
+                <div style="width:10em;font-size: 1.33rem;position: absolute;left:-27%;top:103%;"></div>
+            </li>
+            <li class="shop-block-text" style="padding-left: 9%">面积大体验好</li>
+            <li class="shop-block-text">13个品牌一级代理</li>
+            <li class="shop-block-text">30多名专业销售顾问</li>
+        </ul>
+        <div class="clear" style="margin-top: 4%;color:#16A0E8;">
+            <div style="border-bottom: 1px solid #dddddd;width: 96%;margin: 0 auto"></div>
+            <div class="lf shop-block-name">
+                <div>日立中央空调</div>
+                <div>线下专业体验店</div>
+            </div>
+            <div class="lf" style="width: 67%;padding-left:1%;font-size: 1.33rem;padding-top: 2%;">
+                <div style="margin-bottom: 2%">电话：0571-8669 1616</div>
+                <div>地址：滨江区滨康路228号万福中心A座3F</div>
+            </div>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--未莱安装工艺-->
+    <div style="margin-top: 5%">
+        <div class="products-title">
+        <h4 class="main-title">未莱安装&荣誉</h4>
+        <div class="title-bottom-line" style="width: 34%"></div>
+        <div style="font-size: 1.33rem;">我们用心承诺做好每一个项目</div>
+        <div style="font-size: 1.33rem;">因为我们有优秀的团队和良好的施工管理以及工艺标准</div>
+    </div>
+        <div style="width: 50%;margin: 0 auto;">
+            <img class="img-responsive"  src="img/raw_1505730941.png" alt=""/>
+        </div>
+        <div>
+            <img class="img-responsive" style="width: 100%" src="img/service.jpg" alt=""/>
+        </div>
+    </div>
+    <!--优秀的团队-->
+    <div style="margin-top: 3%">
+        <h4 style="margin: 2% auto;width: 80%;color: #16A0E8;text-align: center;font-weight: bold;font-size: 2rem;">优秀的工艺来自优秀的团队</h4>
+        <div class="swiper-container" id="swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/person.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/person.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/person.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/person.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/person.jpg" alt=""/></div>
+                <div class="swiper-slide"><img src="img/person.jpg" alt=""/></div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <div class="grey-banner"></div>
+    <!--我们的安装工艺-->
+    <div style="margin-top: 5%">
+        <div class="products-title">
+            <h4 class="main-title">我们的安装工艺</h4>
+            <div class="title-bottom-line"  style="width: 36%"></div>
+            <div style="font-size: 1.33rem;margin-top: 1%">因为我们有优秀的团队和良好的施工管理以及工艺标准</div>
+        </div>
+        <table class="install-block clear mt3">
+            <tr>
+                <td>
+                    <span>室内机吊装</span>
+                    <span class="glyphicon glyphicon-chevron-right" style="font-size: 0.5em;"></span>
+                </td>
+                <td>
+                    <img class="img-responsive" src="img/raw_1502454482.png" alt=""/>
+                </td>
+                <td>
+                    <span>保压调试</span>
+                    <span class="glyphicon glyphicon-chevron-right" style="font-size: 0.5em;"></span>
+                </td>
+                <td>
+                    <img class="img-responsive" src="img/raw_1502454715.png" alt=""/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img class="img-responsive" src="img/raw_1502455086.png" alt=""/>
+                </td>
+                <td>
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span>厂家指定材料</span>
+                </td>
+                <td>
+                    <img class="img-responsive" src="img/raw_1502454922.png" alt=""/>
+                </td>
+                <td>
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span>专业安装工具</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="grey-banner"></div>
+    <div>
+        <img class="img-responsive" style="width: 100%" src="img/servi_group.jpg" alt=""/>
+    </div>
+    <div class="grey-banner"></div>
+    <!--我想在未莱买中央空调-->
+    <div class="clear">
+        <h4 style="width: 70%;margin: 2% auto;font-weight:bold;font-size:2rem;color: #16A0E8;text-align: center;">我想在未莱买中央空调</h4>
+        <div style="margin:1% 0;position: relative;min-height: 2em;">
+            <div class="header" style="font-size: 1.33rem;width: 34%;left: 33%">今日已有<label style="font-size: 1.33rem;">126</label>人报名</div>
+            <div style="width: 98%;border-bottom:1px solid #dddddd;position: absolute;top:46%;z-index: 10;"></div>
+        </div>
+        <form action="" class="cal-form2" id="cal-form4">
+            <input type="hidden" value="post" name="action">
+            <input type="hidden" value="14" name="diyid">
+            <input type="hidden" value="2" name="do">
+            <ul class="choose-machine-content">
+                <li class="contact-form-block" style="background: #16A0E8;">专业暖通设计师</li>
+                <li class="contact-form-block" style="background: #F26D4F;">专业暖通设计师</li>
+                <li class="contact-form-block" style="background: #F79C33;">专业暖通设计师</li>
+            </ul>
+            <div class="customer-name">
+                <input type="text" style="width: 92%" name="name" placeholder="请输入您的姓名"/>
+            </div>
+            <div class="phone-number">
+                <input type="number" style="width: 92%" name="phone" placeholder="请输入您的手机"/>
+            </div>
+            <p style="padding-left: 5%;font-size: 1.25rem;">*我们承诺保护您的隐私,拒绝频繁电话骚扰</p>
+            <div class="cal-form3-submit">
+                <input type="button" value="立即报名" style="background: #F79C33"/>
+            </div>
+            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
+            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
+        </form>
+    </div>
+    <!--地图模块-->
+    <div style="width: 100%;margin: 2% auto">
+        <img src="img/map.jpg" class="img-responsive" alt=""/>
+    </div>
+    <!--<div id="allmap" style="min-height: 30em;"></div>-->
+
+    <!--底部联系方式-->
+    <div class="mt3 clear" style="background:  #16A0E8;color:white;padding-bottom: 2%">
+        <div style="width: 27%;float: left">
+            <img class="img-responsive" src="img/logo_1.png" alt="" style="margin-top: 9%;margin-left: 5%;"/>
+        </div>
+        <div style="width: 73%;float: right;">
+            <div style="text-align: right;padding-right:2%;font-weight: bold;font-size: 2rem;margin-top: 3%;margin-bottom: 2%;"><span class="glyphicon glyphicon-earphone"></span>0571-8669 1616</div>
+            <div style="text-align: right;padding-right: 2%;font-size: 1.33rem;margin: 2% 0 1% 0">专业的中央空调咨询顾问</div>
+            <div style="text-align: right;padding-right: 2%;font-size: 1.33rem;">copyright@浙江百诚未莱环境集成有限公司</div>
+        </div>
+    </div>
+    <!--返回顶部-->
+    <div style="background: #EDE8ED;" class="clear" >
+        <div class="return-top">
+            <a href="#top" style="color:#ffffff;font-size: 1.9rem;">返回顶部</a>
+            <span class="glyphicon glyphicon-triangle-bottom" style="color: #F79C33;position: absolute;left: 41%;top: 91%;"></span>
+        </div>
+    </div>
+    <!--底部导航栏-->
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <ul class="nav-bottom">
+            <li style="background:#16A0E8 "><a href="#">在线咨询</a></li>
+            <li style="background:#F79C33 "><a href="tel:057186691616">拨打电话</a></li>
+            <li style="background:#F26D4F "><a data-target="#myModal" data-toggle="modal">预约购买</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!--<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-3.4.2.jquery.min.js"></script>
+    <script src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var mySwiper = new Swiper ('#swiper1', {
+            //autoplay: 5000,
+            //loop: true,
+            pagination: '.swiper-pagination'
+        });
+        var swiper = new Swiper('#swiper2', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 3,
+            spaceBetween: 10
+        });
+        jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:3,interTime:50});
+
+
+        // 百度地图API功能
+        /*var map = new BMap.Map('allmap');
+        var poi = new BMap.Point(120.217,30.188);
+        map.centerAndZoom(poi, 16);
+        map.enableScrollWheelZoom();
+
+        var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+                '地址：北京市海淀区上地十街10号<br/>电话：(010)59928888<br/>简介：百度大厦位于北京市海淀区西二旗地铁站附近，为百度公司综合研发及办公总部。' +
+                '</div>';
+
+        //创建检索信息窗口对象
+        var searchInfoWindow = null;
+        searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+            title  : "百度大厦",      //标题
+            width  : 290,             //宽度
+            height : 105,              //高度
+            panel  : "panel",         //检索结果面板
+            enableAutoPan : true,     //自动平移
+            searchTypes   :[
+                BMAPLIB_TAB_SEARCH,   //周边检索
+                BMAPLIB_TAB_TO_HERE,  //到这里去
+                BMAPLIB_TAB_FROM_HERE //从这里出发
+            ]
+        });
+        var marker = new BMap.Marker(poi); //创建marker对象
+        marker.enableDragging(); //marker可拖拽
+        marker.addEventListener("click", function(e){
+            searchInfoWindow.open(marker);
+        });
+        map.addOverlay(marker); //在地图中添加marker*/
+
+    </script>
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <title>phone_web</title>
+    <title>air_total</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/swiper-3.4.2.min.css"/>
@@ -57,6 +57,11 @@
         <div class="swiper-pagination"></div>
         <!--预约套餐按钮-->
         <a class="book-button" data-target="#myModal" data-toggle="modal">预约该套餐</a>
+        <!--黑色文字定位-->
+        <div class="swiper-text-location" style="background: #AB98A4;padding: 1% 2%">
+            <div style="font-size: 2rem;">日立家用中央空调</div>
+            <div style="font-size: 1.5rem;">臻芯科技  真心为家</div>
+        </div>
     </div>
     <!--输入弹框-->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -100,6 +105,8 @@
         </div>
     </div>
 
+    <div class="grey-banner"></div>
+
     <!--日立商用中央空调-->
     <div class="banner">
         <div style="position: absolute;left: 5.8%;top:9.2%;z-index: 999;width: 70%">
@@ -113,65 +120,53 @@
             <img style="width: 100%;border-radius: 3px;" class="img-responsive" src="img/background.jpg" alt=""/>
         </div>
     </div>
-    <!--3 hot products-->
+    <!--百诚未莱一级代理-->
     <div class="hot-products">
         <div class="products-title">
-            <h4 class="main-title">日立家用中央空调三大热销机型</h4>
-            <div style="width: 74%;" class="title-bottom-line"></div>
-            <p style="padding: 1% 0;font-size: 1.33rem">分别是EX-Pro系列&nbsp;VAM公寓系列&nbsp;VAM别墅系列</p>
+            <h4 class="main-title">百诚未莱一级代理</h4>
+            <div style="width: 42%;" class="title-bottom-line"></div>
+            <p style="padding: 1% 0;font-size: 1.33rem">分别是国产美的，日立，大金，约克，麦克维尔</p>
         </div>
-        <ul class="clear">
-            <li class="lf product-block">
-                <p><img src="img/hitachi_280-1.jpg" alt=""/></p>
-                <p style="font-size: 1.65rem;font-weight: bold;">VAM公寓系列</p>
-                <p style="font-size: 1.21rem">适合90-200方公寓</p>
-            </li>
-            <li class="lf product-block">
-                <p><img src="img/hitachi_280-2.jpg" alt=""/></p>
-                <p style="font-size: 1.65rem;font-weight: bold">EX-Pro系列</p>
-                <p style="font-size: 1.21rem">适合60-140方公寓</p>
-            </li>
-            <li class="lf product-block">
-                <p><img src="img/hitachi_280-3.jpg" alt=""/></p>
-                <p style="font-size: 1.65rem;font-weight: bold">VAM别墅系列</p>
-                <p style="font-size: 1.21rem">适合200方以上别墅</p>
-            </li>
-        </ul>
-    </div>
-    <!--calculate-block1-->
-    <div style="margin-top: 10px;">
-        <img src="img/title.png" style="width: 100%" alt=""/>
-    </div>
-    <!-- calculate form-->
-    <div class="form-box-show">
-        <div style="margin:10px 0;position: relative;min-height: 2em;">
-            <div class="header"><label>今日还剩</label><span></span><b></b><i style="margin-right: 2%;font-style: normal"></i><label>免费名额</label></div>
-            <div style="width: 94%;border-bottom:1px solid #dddddd;position: absolute;left:3%;top:46%;z-index: 10;"></div>
+        <div class="swiper-container" id="logo-swiper" style="width: 95%;margin: 0 auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p style="background: #F0E6F0">
+                        <img src="img/rili.png" style="padding: 18% 1%" class="img-responsive" alt=""/>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p style="background: #F0E6F0">
+                        <img src="img/dajin.png" style="padding: 18% 1%" class="img-responsive" alt=""/>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p style="background: #F0E6F0;">
+                        <img src="img/media_logo.png" style="padding: 18% 1%" class="img-responsive"   alt=""/>
+                    </p>
+
+                </div>
+                <div class="swiper-slide">
+                    <p style="background: #F0E6F0">
+                        <img src="img/rili.png" style="padding: 18% 1%" class="img-responsive" alt=""/>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p style="background: #F0E6F0">
+                        <img src="img/dajin.png" style="padding: 18% 1%" class="img-responsive" alt=""/>
+                    </p>
+                </div>
+                <div class="swiper-slide">
+                    <p style="background: #F0E6F0;">
+                        <img src="img/media_logo.png" style="padding: 18% 1%" class="img-responsive"   alt=""/>
+                    </p>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-prev" style="height: 30px;"></div>
+            <div class="swiper-button-next" style="height: 30px;"></div>
         </div>
-        <form action="" class="cal-form" id="cal-form">
-            <input type="hidden" value="post" name="action">
-            <input type="hidden" value="14" name="diyid">
-            <input type="hidden" value="2" name="do">
-            <div>
-                <input type="number" placeholder="请输入房间面积" name="square"/>
-            </div>
-            <div>
-                <select class="selectbox" id="11" name="">
-                    <option value="1">一室一厅</option>
-                    <option value="2">两室一厅</option>
-                    <option value="3">三室一厅</option>
-                </select>
-            </div>
-            <div>
-                <input type="number" placeholder="请输入手机号,报价结果将发送到你手机" name="phone"/>
-            </div>
-            <div>
-                <input type="button" value="立即计算" style="background: #16A0E8;color: #ffffff;font-weight: bold;letter-spacing: 5px;font-size: 2rem;height: 2.35em;"/>
-            </div>
-            <input type="hidden" value="name,text;phone,text;" name="dede_fields">
-            <input type="hidden" value="f8130eef5454e4d8a0e15adafca06a59" name="dede_fieldshash">
-        </form>
     </div>
+
     <!--价格结果弹出框-->
     <div class="modal fade" id="PriceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog" role="document">
@@ -209,27 +204,10 @@
             </div>
         </div>
     </div>
-
-
-    <!--滚动栏-->
-    <div class="customer-slider">
-        <div style="text-align: center;">
-            <div style="font-size: 1.75rem;color:#009688;padding-top: 2%">共有&nbsp;<span style="color:#F27154;">36956</span>&nbsp;位客户获得了报价</div>
-        </div>
-        <div class="txtMarquee-top">
-            <div class="bd">
-                <ul class="infoList" style="font-size: 1.25rem">
-                    <li><span style="margin: 0 10px;">120m<sup>2</sup></span>137****5678 <span style="margin: 0 10px;">三室两厅</span>6小时前刚刚获取了报价</li>
-                    <li><span style="margin: 0 10px;">120m<sup>2</sup></span>137****5678 <span style="margin: 0 10px;">三室两厅</span>6小时前刚刚获取了报价</li>
-                    <li><span style="margin: 0 10px;">120m<sup>2</sup></span>137****5678 <span style="margin: 0 10px;">三室两厅</span>6小时前刚刚获取了报价</li>
-                </ul>
-            </div>
-        </div>
-    </div>
     <div class="grey-banner"></div>
-    <!--calculate-block2-->
-    <div>
-        <img src="img/title.png" style="width: 100%;margin-top: 3%" alt=""/>
+    <!--报价表格-->
+    <div style="margin-top: 10px;">
+        <img src="img/title.png" style="width: 100%" alt=""/>
     </div>
     <div class="form-box-show">
         <div style="margin:10px 0;position: relative;min-height: 2em;">
@@ -248,25 +226,25 @@
                 <li class="machine-block remove-blue">
                     <div>
                         <input type="radio" id="myCheck-exp" style="display: none;" name="roomType" value="100">
-                        <label for="myCheck-exp" class="remove-blue">EX-P公寓</label>
+                        <label for="myCheck-exp" class="remove-blue">日立</label>
                     </div>
                 </li>
                 <li class="machine-block remove-blue">
                     <div>
                         <input type="radio" id="myCheck-vam" style="display: none;" name="roomType" value="200">
-                        <label for="myCheck-vam" class="remove-blue">VAM公寓</label>
+                        <label for="myCheck-vam" class="remove-blue">大金</label>
                     </div>
                 </li>
                 <li class="machine-block remove-blue">
                     <div>
                         <input type="radio" id="myCheck-vam2" style="display: none;" name="roomType" value="300">
-                        <label for="myCheck-vam2" class="remove-blue">VAM别墅</label>
+                        <label for="myCheck-vam2" class="remove-blue">美的</label>
                     </div>
                 </li>
                 <li class="machine-block remove-blue">
                     <div>
                         <input type="radio" id="myCheck-feng" style="display: none;" name="roomType" value="400">
-                        <label for="myCheck-feng" class="remove-blue">一拖一</label>
+                        <label for="myCheck-feng" class="remove-blue">约克</label>
                     </div>
                 </li>
             </ul>
@@ -358,35 +336,35 @@
     <!--三大机型简介-->
     <div class="products-introduce">
         <div class="products-title">
-            <h4 class="main-title">日立家用中央空调 三大热销机型简介</h4>
+            <h4 class="main-title">未莱热销中央空调 三大热销机型简介</h4>
             <div class="title-bottom-line" style="width: 84%"></div>
-            <p style="padding: 1% 0;font-size: 1.33rem;">分别是EX-Pro系列&nbsp;VAM公寓系列&nbsp;VAM别墅系列</p>
+            <p style="padding: 1% 0;font-size: 1.33rem;">分别是日立，大金，美的</p>
         </div>
         <ul class="main-introduce">
             <li style="overflow: hidden">
                 <p class="lf" style="width: 50%"><img class="img-responsive" src="img/540-1.jpg" alt=""/></p>
                 <ul class="lf" style="width: 50%;padding-left: 3%">
                     <li>
-                        <div class="introduce-title">日立EX-Pro系列</div>
+                        <div class="introduce-title">日立中央空调</div>
                     </li>
                     <li class="title-bottom-line" style="width: 74%;border-bottom: 1px solid #dddddd;margin-left: 0;"></li>
                     <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：超强性价比，适用于50-160方公寓，高静音，全直流变频</li>
                     <li class="clear mb10">
                         <div class="left-img" style="background:  #16A0E8">
-                            <img  class="img-responsive" src="img/90.png" alt=""/>
+                            <img  class="img-responsive" src="img/raw_1508143750.png" alt=""/>
                         </div>
                         <div class="right-text">
-                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">90S</div>
-                            <div style="font-size: 1.33rem;color:#BBBBBB;">只需要90秒快速启动</div>
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">进口零部件</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">压缩机,电脑版,变频器...</div>
                         </div>
                     </li>
                     <li class="clear mb10">
                         <div class="left-img" style="background:  #F79C33">
-                            <img  class="img-responsive" src="img/sun.png" style="padding: 13%" alt=""/>
+                            <img  class="img-responsive" src="img/shiwaiji.png" style="padding: 16%" alt=""/>
                         </div>
                         <div class="right-text">
-                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">智能化</div>
-                            <div style="font-size: 1.33rem;color:#BBBBBB;">拒绝制热倒春寒现象</div>
+                            <div style="font-size: 1.33rem;color:#858585;font-weight: bold">体积小巧</div>
+                            <div style="font-size: 1.33rem;color:#BBBBBB;">内外机小巧，安装方便</div>
                         </div>
                     </li>
                     <li class="clear mb10">
@@ -403,10 +381,10 @@
             <li style="overflow: hidden">
                 <ul class="lf" style="width: 50%;padding-left: 3%">
                     <li>
-                        <div class="introduce-title">VAM公寓系列</div>
+                        <div class="introduce-title">大金中央空调</div>
                     </li>
                     <li class="title-bottom-line" style="width: 62%;border-bottom: 1px solid #dddddd;margin-left: 0;"></li>
-                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：日立高端技术结晶，适合60-200方公寓，强大拖带比</li>
+                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：市场占有率高，客户口碑持续稳定，售后支持给力</li>
                     <li class="clear mb10">
                         <div class="left-img" style="background:  #16A0E8">
                             <img  class="img-responsive" src="img/air_fan.png" style="padding: 13%" alt=""/>
@@ -441,10 +419,10 @@
                 <p class="lf" style="width: 50%"><img class="img-responsive" src="img/540-3.jpg" alt=""/></p>
                 <ul class="lf" style="width: 50%;padding-left: 3%">
                     <li>
-                        <div class="introduce-title">VAM别墅系列</div>
+                        <div class="introduce-title">美的中央空调</div>
                     </li>
                     <li class="title-bottom-line" style="width: 62%;border-bottom: 1px solid #dddddd;margin-left: 0;"></li>
-                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：适合150方以上的大户型，省电高效</li>
+                    <li style="margin:5% 0;color:#858585;font-size: 1.25rem;">推荐理由：超高性价比，国产机的骄傲，最早发力国产中央空调市场，售后服务非常完善</li>
                     <li class="clear mb10">
                         <div class="left-img" style="background:  #16A0E8">
                             <img  class="img-responsive" src="img/chip.png" style="padding: 13%" alt=""/>
@@ -477,42 +455,42 @@
         </ul>
     </div>
     <div class="grey-banner"></div>
-    <!--不得不说的特色-->
+    <!--未莱专注中央空调市场12年-->
     <div class="product-feature mt3 mb3">
         <div class="products-title">
-            <h4 class="main-title">不得不说的日立中央空调特色</h4>
+            <h4 class="main-title">未莱专注中央空调市场12年</h4>
             <div class="title-bottom-line" style="width: 69%"></div>
             <p style="padding: 1% 0;font-size: 1.33rem">臻芯科技&nbsp;&nbsp;真心为家</p>
         </div>
         <ul class="clear">
             <li class="feature-block">
                 <div class="img-background">
-                    <img  class="img-responsive" src="img/search.png" alt=""/>
+                    <img  class="img-responsive" src="img/12years.png" alt=""/>
                 </div>
-                <div style="font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">全进口</div>
+                <div style="font-size: 1.75rem;text-align:center;font-weight: bold;color:#828181;margin: 1% 0">12年</div>
             </li>
             <li class="feature-block">
                 <div class="img-background">
-                    <img  class="img-responsive" src="img/voice.png" alt=""/>
+                    <img  class="img-responsive" src="img/background.png" alt=""/>
                 </div>
-                <div style="font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">超静音</div>
+                <div style="font-size: 1.75rem;text-align:center;font-weight: bold;color:#828181;margin: 1% 0">背景</div>
             </li>
             <li class="feature-block">
                 <div class="img-background">
-                    <img  class="img-responsive" src="img/mminternal%20unit%20.png" alt=""/>
+                    <img  class="img-responsive" src="img/material.png" alt=""/>
                 </div>
-                <div style="font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">超薄</div>
+                <div style="font-size: 1.75rem;text-align:center;font-weight: bold;color:#828181;margin: 1% 0">材料</div>
             </li>
             <li class="feature-block">
                 <div class="img-background">
-                    <img  class="img-responsive" src="img/energy-saving%20mode.png" alt=""/>
+                    <img  class="img-responsive" src="img/design.png" alt=""/>
                 </div>
-                <div style="font-size: 1.75rem;font-weight: bold;color:#999898;margin: 1% 0">IPLV7.5</div>
+                <div style="font-size: 1.75rem;text-align:center;font-weight: bold;color:#828181;margin: 1% 0">设计</div>
             </li>
-            <li class="desc-text" style="width: 18%"><div style="font-size: 1.33rem;color:#BBBBBB">核心零部件</div></li>
-            <li class="desc-text" style="width: 19%"><div style="font-size: 1.33rem;color:#BBBBBB">内机仅21db</div></li>
-            <li class="desc-text" style="width: 27%"><div style="font-size: 1.33rem;color:#BBBBBB">内机厚度192mm</div></li>
-            <li class="desc-text" style="width: 15%"><div style="font-size: 1.33rem;color:#BBBBBB">高效节能</div></li>
+            <li class="desc-text" style="width: 20%;text-align: center"><div style="font-size: 1.33rem;color:#BBBBBB">从业经验</div></li>
+            <li class="desc-text" style="width: 20%;text-align: center"><div style="font-size: 1.33rem;color:#BBBBBB">公司信誉</div></li>
+            <li class="desc-text" style="width: 20%;text-align: center"><div style="font-size: 1.33rem;color:#BBBBBB">精选辅料</div></li>
+            <li class="desc-text" style="width: 20%;text-align: center"><div style="font-size: 1.33rem;color:#BBBBBB">专业团队</div></li>
         </ul>
     </div>
     <div class="grey-banner"></div>
@@ -533,8 +511,8 @@
     <!--选择中央空调-->
     <div class="clear good-items">
         <div class="lf">
-            <div style="font-size: 1.45rem;font-weight: bold;color:#F79C33;" class="mt3 mb3">一张图告诉你，怎么选择日立中央空调</div>
-            <p style="font-size: 1.23rem;color:#F79C33;">第三者的角度，全面，客观分析日立中央空调优缺点</p>
+            <div style="font-size: 1.45rem;font-weight: bold;color:#F79C33;" class="mt3 mb3">一张图告诉你，大金和日立哪个更好？</div>
+            <p style="font-size: 1.23rem;color:#F79C33;">第三者的角度，全面、客观分析大金和日立的优缺点</p>
             <a class="check_button mb3" style="background: #F79C33;border:#F79C33; ">
                 <span style="font-size: 1.45rem;font-weight: bold">点击查看</span>
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
@@ -555,12 +533,12 @@
         <ul>
            <li style="border: 1px solid #F79C33;margin: 1%;border-radius: 3px;padding-bottom: 3%">
                 <h4 class="taocan-title">90方户型超值日立套餐&nbsp;巨省20%</h4>
-                <div style="font-size:1.5rem;text-align: center;color:#aaaaaa">专为90方左右公寓精心搭配</div>
+                <div style="font-size:1.5rem;text-align: center;color:#828181">专为90方左右公寓精心搭配</div>
                 <div class="clear">
                     <div class="lf" style="width: 55%;margin-left: 2%;">
                         <img class="img-responsive" style="border-radius: 3px;" src="img/570-390-2.jpg" alt=""/>
                     </div>
-                    <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#aaaaaa">
+                    <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#828181">
                         <div style="border-bottom: 1px solid #dddddd;font-size: 1.5rem;">市场价￥<span style="font-size: 2.1rem;font-weight: bold;color:#F79C33; ">36000</span>元</div>
                         <div style="font-size: 1.1rem;margin-top: 1%">*我们坚持给你最便宜</div>
                         <a class="view-price-button" data-target="#myModal" data-toggle="modal">查看未莱售价</a>
@@ -570,12 +548,12 @@
            </li>
             <li style="border: 1px solid #16A0E8;margin: 1%;border-radius: 3px;padding-bottom: 3%">
                 <h4 class="taocan-title">90方户型超值日立套餐&nbsp;巨省20%</h4>
-                <div style="font-size:1.5rem;text-align: center;color:#aaaaaa">专为90方左右公寓精心搭配</div>
+                <div style="font-size:1.5rem;text-align: center;color:#828181">专为90方左右公寓精心搭配</div>
                 <div class="clear">
                     <div class="lf" style="width: 55%;margin-left: 2%;">
                         <img class="img-responsive" style="border-radius: 3px;" src="img/570-390-1.jpg" alt=""/>
                     </div>
-                    <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#aaaaaa">
+                    <div class="lf" style="width: 40%;margin-left: 2%;margin-top: 2%;color:#828181">
                         <div style="border-bottom: 1px solid #dddddd">市场价￥<span style="font-size: 1.7em;font-weight: bold;color:#16A0E8; ">36000</span>元</div>
                         <div style="font-size: 1.1rem;margin-top: 1%">*我们坚持给你最便宜</div>
                         <a class="view-price-button" style="background:#16A0E8;" data-target="#myModal" data-toggle="modal">查看未莱售价</a>
@@ -589,7 +567,7 @@
     <!--代金券-->
     <div class="cash-coupon">
         <div class="clear" style="margin-bottom: 1%">
-            <div class="lf cash-coupon-title">日立中央空调-代金券</div>
+            <div class="lf cash-coupon-title">购买中央空调-代金券</div>
             <a class="rt cash-coupon-little-button" href="#">限量领取</a>
         </div>
         <div class="cash-coupon-money">
@@ -1042,6 +1020,12 @@
             pagination: '.swiper-pagination'
         });
         var swiper = new Swiper('#swiper2', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            slidesPerView: 3,
+            spaceBetween: 10
+        });
+        var logoSwiper = new Swiper('#logo-swiper', {
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             slidesPerView: 3,
